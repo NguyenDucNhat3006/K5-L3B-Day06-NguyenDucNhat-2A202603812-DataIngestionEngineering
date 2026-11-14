@@ -1,4 +1,9 @@
-# Core setup and PDF parsing. Choose and install an embedding SDK separately.
+# Python 3.12 supported; bounded major versions keep installs reproducible.
 psycopg[binary]==3.3.8
+pgvector>=0.4,<1
 pypdf>=5,<7
 python-dotenv>=1,<2
+numpy>=1.26,<3
+sentence-transformers>=3.4,<6
+streamlit>=1.41,<2
+pandas>=2.2,<4

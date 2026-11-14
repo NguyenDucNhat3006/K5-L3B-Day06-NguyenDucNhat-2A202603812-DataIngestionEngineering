@@ -1,47 +1,34 @@
 # Day 06 · Data Ingestion Engineering
 
-**Lab cá nhân** · **4 giờ** · **Dữ liệu tự chọn**
+Retrieval engineering lab using five calculus PDFs (249 content pages), three controlled configurations (A fixed-size, B paragraph-aware, C B plus question-specific SQL metadata filters), multilingual sentence-transformer embeddings, and PostgreSQL 16 + pgvector.
 
-Biến tài liệu thành kho tri thức có thể truy xuất cho AI agent, rồi đo xem cách chuẩn bị dữ liệu nào hiệu quả nhất.
+## Quick start
 
-| 📄 Dữ liệu | 🧩 Chiến lược | 🎯 Benchmark |
-|---|---|---|
-| Tối thiểu **30 trang nội dung** | Tối thiểu **3 cấu hình** | Tối thiểu **20 câu hỏi** |
+See [`starter/README.md`](starter/README.md) for Python 3.12, Docker, database, and model setup. From `starter/`:
 
-## Bắt đầu nhanh
+```powershell
+python -m src.run index       # index corpus; C reuses B vectors
+python -m src.run evaluate    # benchmark existing indexes; no corpus re-embedding
+streamlit run app.py          # live retrieval playground and artifact dashboards
+```
 
-Dùng [starter PostgreSQL + pgvector](starter/README.md) để dựng database và hoàn thiện các hàm TODO, hoặc tự chọn vector store tương đương. Starter chỉ là khung: **bạn tự hiện thực pipeline và benchmark**.
+To run both pipeline stages explicitly: `python -m src.run all`. Evaluation writes metrics and A/B/C top-3 traces under `starter/results/`. The benchmark in `starter/benchmark/questions.json` is locked and read-only in the UI. Do not tune on the five test questions.
 
-## 1. Xây pipeline
+## Verified saved results
 
-![Đọc tài liệu, chuẩn hóa, chia chunk, tạo vector, lưu và kiểm tra](assets/ingestion-pipeline.svg)
+The saved metrics record 20 questions (15 dev, 5 test); A, B, and C each have overall Hit@1 **6/20 (0.30)** and gold-location Hit@3 **10/20 (0.50)**. Test grounding audits are **6/10** for each strategy, and C filter compliance is **4/4**. The coherence audit scores A **17/20** and B/C **16/20**. These measurements describe this corpus and small benchmark only. The dashboard reads values from saved files rather than embedding scores in its code.
 
-Chọn tài liệu được phép sử dụng; giữ **ID tài liệu, nguồn, trang/vị trí** và metadata phù hợp. Dùng embedding model thật qua API hoặc chạy local; lưu và truy xuất bằng pgvector, Qdrant, Chroma hoặc một store tương đương.
+PDF extraction has visible formula/layout errors, including an incomplete differentiability definition (q14), a Riemann-sum definition missing from top-3 evidence (q20), and damaged matrix/formula layout recorded in the coherence audit. These affect evidence completeness. No LLM answer-generation evaluation was performed.
 
-## 2. So sánh và đánh giá
+## Submission and data notes
 
-![Ba chiến lược được đánh giá trên cùng corpus và benchmark dev/test](assets/benchmark-workflow.svg)
+- Pipeline and demo: [`starter/`](starter/README.md)
+- Student record: [`STUDENT.md`](STUDENT.md)
+- Experiment log: [`artifacts/experiment_log.csv`](artifacts/experiment_log.csv)
+- Individual report: [`report/individual/2A202603812_NguyenDucNhat.md`](report/individual/2A202603812_NguyenDucNhat.md)
+- Corpus permissions are unknown and marked for verification. PDFs are not committed; verify redistribution rights before sharing the source PDFs or extracted traces.
+- `.env`, credentials, and local databases must remain untracked. No GitHub push or deployment is part of this repository workflow.
 
-Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **15 câu dev / 5 câu test** trước khi chạy; chọn cấu hình trên dev, rồi đánh giá test sau khi cố định. Mỗi câu hỏi cần có đoạn bằng chứng và trang nguồn; thiết kế bộ câu hỏi và đánh giá theo [BENCHMARK.md](BENCHMARK.md).
+## Lab references
 
-Đánh giá theo năm khía cạnh: **độ chính xác truy xuất**, **tính mạch lạc của chunk**, **tính hữu dụng của metadata**, **chất lượng grounding** và **tác động của chiến lược dữ liệu**. Giải thích lựa chọn bằng kết quả, ví dụ lỗi và các đánh đổi.
-
-## 3. Chuẩn bị bài nộp
-
-1. Chạy pipeline và lưu cấu hình, kết quả top-3, trace cùng nhãn đánh giá thủ công.
-2. Điền [thông tin học viên](STUDENT.md), [nhật ký thí nghiệm](artifacts/experiment_log.csv) và bản sao [mẫu báo cáo cá nhân](report/individual/MSSV_HoTen.md).
-3. Kiểm tra mã nguồn, cách chạy, manifest dữ liệu và checklist trong [SUBMISSION.md](SUBMISSION.md).
-
-## Tài liệu hướng dẫn
-
-| Bạn cần tìm | Tài liệu |
-|---|---|
-| Setup baseline PostgreSQL + pgvector | [starter/README.md](starter/README.md) |
-| Các bước làm và cách tính chỉ số | [GUIDE.md](GUIDE.md) |
-| Tiến độ trong 4 giờ | [CHECKPOINTS.md](CHECKPOINTS.md) |
-| Năm tiêu chí benchmark và bộ câu hỏi | [BENCHMARK.md](BENCHMARK.md) |
-| Tiêu chí chấm điểm | [RUBRIC.md](RUBRIC.md) |
-| Quy tắc sử dụng dữ liệu, AI và API | [RULES.md](RULES.md) |
-| Cách nộp bài | [SUBMISSION.md](SUBMISSION.md) |
-
-[data/format-example.json](data/format-example.json) chỉ minh họa định dạng, không phải corpus đủ điều kiện. Phần xử lý và benchmark do bạn tự hiện thực; không bắt buộc xây chatbot.
+The original lab brief and evaluation instructions remain available: [GUIDE](GUIDE.md), [locked benchmark specification](BENCHMARK.md), [rubric](RUBRIC.md), [data and API rules](RULES.md), [submission checklist](SUBMISSION.md), and [four-hour checkpoints](CHECKPOINTS.md). The pipeline architecture illustration is in [`assets/`](assets/).

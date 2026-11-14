@@ -1,0 +1,62 @@
+﻿[
+  {
+    "source_id": "ch1",
+    "source": "ch1.pdf",
+    "source_path_or_url": "raw/ch1.pdf",
+    "chapter": 1,
+    "title": "Phép tính vi phân và tích phân hàm một biến",
+    "author": "TS. Phùng Minh Đức",
+    "institution": "Trường ĐH Công nghệ Thông tin",
+    "page_count": 61,
+    "license_or_permission": "Unknown; redistribution permission requires verification",
+    "accessed_at": "not recorded"
+  },
+  {
+    "source_id": "ch2",
+    "source": "ch2.pdf",
+    "source_path_or_url": "raw/ch2.pdf",
+    "chapter": 2,
+    "title": "Lý thuyết chuỗi",
+    "author": "TS. Phùng Minh Đức",
+    "institution": "Trường ĐH Công nghệ Thông tin",
+    "page_count": 46,
+    "license_or_permission": "Unknown; redistribution permission requires verification",
+    "accessed_at": "not recorded"
+  },
+  {
+    "source_id": "ch3",
+    "source": "ch3.pdf",
+    "source_path_or_url": "raw/ch3.pdf",
+    "chapter": 3,
+    "title": "Phép tính vi phân hàm nhiều biến",
+    "author": "TS. Phùng Minh Đức",
+    "institution": "Trường ĐH Công nghệ Thông tin",
+    "page_count": 61,
+    "license_or_permission": "Unknown; redistribution permission requires verification",
+    "accessed_at": "not recorded"
+  },
+  {
+    "source_id": "ch4",
+    "source": "ch4.pdf",
+    "source_path_or_url": "raw/ch4.pdf",
+    "chapter": 4,
+    "title": "Phép tính tích phân hàm nhiều biến",
+    "author": "TS. Phùng Minh Đức",
+    "institution": "Trường ĐH Công nghệ Thông tin",
+    "page_count": 58,
+    "license_or_permission": "Unknown; redistribution permission requires verification",
+    "accessed_at": "not recorded"
+  },
+  {
+    "source_id": "ch5",
+    "source": "ch5.pdf",
+    "source_path_or_url": "raw/ch5.pdf",
+    "chapter": 5,
+    "title": "Tích phân đường - Tích phân mặt",
+    "author": "TS. Phùng Minh Đức",
+    "institution": "Trường ĐH Công nghệ Thông tin",
+    "page_count": 23,
+    "license_or_permission": "Unknown; redistribution permission requires verification",
+    "accessed_at": "not recorded"
+  }
+]

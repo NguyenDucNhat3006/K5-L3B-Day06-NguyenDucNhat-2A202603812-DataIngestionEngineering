@@ -1,0 +1,230 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "question": "Theo tài liệu, hàm số f(x) liên tục tại điểm x0 trong khoảng (a,b) khi nào?",
+    "expected_answer": "Hàm f liên tục tại x0 nếu giới hạn của f(x) khi x tiến tới x0 bằng f(x0).",
+    "gold_source_id": "ch1",
+    "gold_page": 20,
+    "evidence_quote": "liên tục tại x0 ∈ (a, b) nếu lim f (x) = f (x0 )",
+    "filter": null,
+    "type": "direct"
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "question": "Theo định nghĩa chuỗi số, khi nào một chuỗi được gọi là hội tụ và có tổng S?",
+    "expected_answer": "Chuỗi hội tụ và có tổng S nếu giới hạn của tổng riêng sn khi n tiến tới dương vô cùng tồn tại và bằng một số hữu hạn S.",
+    "gold_source_id": "ch2",
+    "gold_page": 4,
+    "evidence_quote": "Nếu tồn tại lim sn = S hữu hạn thì ta nói chuỗi (2.1) hội tụ và có tổng S",
+    "filter": null,
+    "type": "direct"
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "question": "Một điểm M0 được gọi là điểm cực tiểu địa phương của hàm nhiều biến f khi nào?",
+    "expected_answer": "M0 là điểm cực tiểu địa phương nếu tồn tại một lân cận V của M0 sao cho f(M0) ≤ f(M) với mọi M thuộc V.",
+    "gold_source_id": "ch3",
+    "gold_page": 47,
+    "evidence_quote": "Điểm M0 được gọi là một điểm cực tiểu (địa phương) của f nếu tồn tại một lân cận V của M0 sao cho f (M0 ) ≤ f (M ), ∀M ∈ V.",
+    "filter": null,
+    "type": "direct"
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "question": "Trong Chương 4, tích phân kép được xây dựng trên loại miền nào?",
+    "expected_answer": "Tích phân kép được xây dựng cho hàm f(x,y) xác định trên một miền đóng và bị chặn R thuộc R².",
+    "gold_source_id": "ch4",
+    "gold_page": 12,
+    "evidence_quote": "Cho hàm f (x, y) xác định trên một miền đóng và bị chặn R ⊂ R2",
+    "filter": {
+      "document_id": "ch4"
+    },
+    "type": "metadata"
+  },
+  {
+    "id": "q05",
+    "split": "test",
+    "question": "Trong chương về tích phân đường và tích phân mặt, điều kiện nào tương đương với việc tích phân đường loại 2 chỉ phụ thuộc hai đầu mút A, B mà không phụ thuộc đường đi?",
+    "expected_answer": "Trong miền đơn liên D, với P, Q và các đạo hàm liên tục, điều kiện ∂P/∂y = ∂Q/∂x tương đương với việc tích phân chỉ phụ thuộc hai đầu mút A, B mà không phụ thuộc đường đi.",
+    "gold_source_id": "ch5",
+    "gold_page": 20,
+    "evidence_quote": "Tích phân P dx + Qdy chỉ phụ thuộc hai đầu mút A, B mà không phụ thuộc cung AB ⊂ D",
+    "filter": {
+      "document_id": "ch5"
+    },
+    "type": "metadata"
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "question": "Định lý Rolle yêu cầu những giả thiết nào và cho kết luận gì?",
+    "expected_answer": "Nếu f liên tục trên [a,b], khả vi trên (a,b) và f(a)=f(b), thì tồn tại c thuộc (a,b) sao cho f'(c)=0.",
+    "gold_source_id": "ch1",
+    "gold_page": 30,
+    "evidence_quote": "Cho hàm f xác định và liên tục trên [a, b], khả vi trên (a, b). Nếu f (a) = f (b) thì tồn tại c ∈ (a, b) sao cho f ′ (c) = 0.",
+    "filter": null,
+    "type": "condition"
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "question": "Theo định lý Lagrange, đạo hàm tại điểm c liên hệ thế nào với f(a) và f(b)?",
+    "expected_answer": "Tồn tại c thuộc (a,b) sao cho f'(c) = (f(b)-f(a))/(b-a).",
+    "gold_source_id": "ch1",
+    "gold_page": 31,
+    "evidence_quote": "f ′ (c) = (f (b) − f (a)) / (b − a)",
+    "filter": null,
+    "type": "paraphrase"
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "question": "Công thức Newton-Leibniz tính tích phân xác định của hàm liên tục f trên [a,b] như thế nào?",
+    "expected_answer": "Nếu F là một nguyên hàm của f trên [a,b], thì tích phân từ a đến b của f(x)dx bằng F(b)-F(a).",
+    "gold_source_id": "ch1",
+    "gold_page": 44,
+    "evidence_quote": "Nếu hàm f (x) liên tục trên [a, b] có một nguyên hàm trong đoạn đó là F (x) thì I = ∫ f (x)dx = F (b) − F (a).",
+    "filter": null,
+    "type": "direct"
+  },
+  {
+    "id": "q09",
+    "split": "test",
+    "question": "Quy tắc D'Alembert kết luận thế nào khi giới hạn un+1/un bằng ℓ nhỏ hơn 1, lớn hơn 1 hoặc bằng 1?",
+    "expected_answer": "Chuỗi số dương hội tụ nếu ℓ<1, phân kỳ nếu ℓ>1, và quy tắc không cho kết luận nếu ℓ=1.",
+    "gold_source_id": "ch2",
+    "gold_page": 19,
+    "evidence_quote": "hội tụ khi ℓ < 1; phân kỳ khi ℓ > 1; không có kết luận khi ℓ = 1.",
+    "filter": null,
+    "type": "condition"
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "question": "Theo tiêu chuẩn Leibniz, hai điều kiện nào đảm bảo một chuỗi đan dấu hội tụ?",
+    "expected_answer": "Dãy số dương un phải giảm từ một chỉ số nào đó trở đi và un phải tiến tới 0 khi n tiến tới dương vô cùng.",
+    "gold_source_id": "ch2",
+    "gold_page": 26,
+    "evidence_quote": "là dãy giảm từ chỉ số n0 nào đó: un+1 ≤ un",
+    "filter": null,
+    "type": "condition"
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "question": "Bán kính hội tụ R của chuỗi lũy thừa có ý nghĩa gì?",
+    "expected_answer": "Nếu tồn tại R>0 thì chuỗi lũy thừa hội tụ tuyệt đối khi |x|<R và phân kỳ khi |x|>R; R được gọi là bán kính hội tụ.",
+    "gold_source_id": "ch2",
+    "gold_page": 33,
+    "evidence_quote": "hội tụ tuyệt đối với |x| < R và phân kỳ với |x| > R. Số R đó được gọi là bán kính hội tụ",
+    "filter": null,
+    "type": "paraphrase"
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "question": "Trong tài liệu về lý thuyết chuỗi, quy tắc tích phân yêu cầu hàm f(x) có những tính chất nào trên [1,+∞)?",
+    "expected_answer": "f phải dương, liên tục, đơn điệu giảm trên [1,+∞) và có giới hạn bằng 0 khi x tiến tới +∞.",
+    "gold_source_id": "ch2",
+    "gold_page": 13,
+    "evidence_quote": "f (x) là một hàm số dương, liên tục, đơn điệu giảm trên [1, +∞) và có lim f (x) = 0",
+    "filter": {
+      "document_id": "ch2"
+    },
+    "type": "metadata"
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "question": "Đạo hàm riêng của f(x,y) theo biến x tại M0 được định nghĩa bằng cách nào?",
+    "expected_answer": "Cố định y=y0; nếu hàm một biến f(x,y0) theo x có đạo hàm tại x0 thì đạo hàm đó là đạo hàm riêng của f theo x tại M0.",
+    "gold_source_id": "ch3",
+    "gold_page": 20,
+    "evidence_quote": "Cố định y = y0 , nếu hàm một biến f (x, y0 ) theo biến x có đạo hàm tại x0 thì đạo hàm đó được gọi là đạo hàm riêng của f theo biến x tại M0",
+    "filter": null,
+    "type": "direct"
+  },
+  {
+    "id": "q14",
+    "split": "test",
+    "question": "Khi nào hàm f(x,y) được gọi là khả vi tại M0 theo định nghĩa vi phân toàn phần?",
+    "expected_answer": "f khả vi tại M0 nếu số gia toàn phần có thể biểu diễn thành phần tuyến tính AΔx+BΔy cộng với αΔx+βΔy, trong đó α và β tiến tới 0 khi M tiến tới M0.",
+    "gold_source_id": "ch3",
+    "gold_page": 22,
+    "evidence_quote": "Nếu có thể biểu diễn dạng ∆f = A(x0 , y0 )∆x + B(x0 , y0 )∆y + α∆x + β∆y, ở đó α → 0, β → 0 khi M → M0 , thì ta nói hàm f khả vi tại M0",
+    "filter": null,
+    "type": "paraphrase"
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "question": "Với phương trình F(x,y)=0, điều kiện nào trong Định lý 3.6 đảm bảo tồn tại hàm ẩn duy nhất y=f(x) gần x0?",
+    "expected_answer": "F phải có các đạo hàm riêng liên tục trên một khoảng mở, F(x0,y0)=0 và đạo hàm riêng Fy tại (x0,y0) phải khác 0.",
+    "gold_source_id": "ch3",
+    "gold_page": 42,
+    "evidence_quote": "F (x0 , y0 ) = 0 và có Fy′ (x0 , y0 ) ≠ 0. Khi đó phương trình (3.3) xác định trong lân cận I nào đó của x0 một hàm ẩn duy nhất y = f (x)",
+    "filter": null,
+    "type": "condition"
+  },
+  {
+    "id": "q16",
+    "split": "dev",
+    "question": "Trong định nghĩa tích phân bội ba, miền V cần có đặc điểm gì?",
+    "expected_answer": "V là một miền đóng và bị chặn trong R³.",
+    "gold_source_id": "ch4",
+    "gold_page": 42,
+    "evidence_quote": "Cho hàm f (x, y, z) xác định trên một miền đóng và bị chặn V ⊂ R3",
+    "filter": null,
+    "type": "direct"
+  },
+  {
+    "id": "q17",
+    "split": "dev",
+    "question": "Khi đổi biến trong tích phân kép, định thức Jacobi xuất hiện trong công thức dưới dạng nào?",
+    "expected_answer": "Định thức Jacobi xuất hiện dưới dạng giá trị tuyệt đối |J| trong phần tử tích phân sau khi đổi biến.",
+    "gold_source_id": "ch4",
+    "gold_page": 31,
+    "evidence_quote": "f (x, y)dxdy = f (x(u, v), y(u, v))|J|dudv",
+    "filter": null,
+    "type": "direct"
+  },
+  {
+    "id": "q18",
+    "split": "test",
+    "question": "Trong chương về tích phân nhiều biến, tích phân bội ba được xây dựng bằng cách chia miền V thành những thành phần nào?",
+    "expected_answer": "Miền V được chia thành n mảnh nhỏ Vi, mỗi mảnh có đường kính di và thể tích ΔVi.",
+    "gold_source_id": "ch4",
+    "gold_page": 42,
+    "evidence_quote": "Chia V thành n mảnh nhỏ Vi , i = 1, . . . , n.",
+    "filter": {
+      "document_id": "ch4"
+    },
+    "type": "metadata"
+  },
+  {
+    "id": "q19",
+    "split": "dev",
+    "question": "Một cung phẳng cho bởi y=f(x), x thuộc [a,b], được gọi là cung trơn khi nào?",
+    "expected_answer": "Cung được gọi là trơn nếu hàm f có đạo hàm liên tục trên [a,b].",
+    "gold_source_id": "ch5",
+    "gold_page": 6,
+    "evidence_quote": "Cung AB được cho bởi phương trình y = f (x), x ∈ [a, b] được gọi là trơn nếu hàm f có đạo hàm liên tục trên [a, b].",
+    "filter": null,
+    "type": "direct"
+  },
+  {
+    "id": "q20",
+    "split": "test",
+    "question": "Tích phân đường loại 1 của hàm f dọc theo cung AB được định nghĩa thông qua giới hạn nào?",
+    "expected_answer": "Đó là giới hạn hữu hạn I của tổng σn khi kích thước lớn nhất của các cung con tiến tới 0 và n tiến tới vô cùng, với giới hạn không phụ thuộc cách chia cung hay cách chọn các điểm Mi.",
+    "gold_source_id": "ch5",
+    "gold_page": 5,
+    "evidence_quote": "Nếu max ∆si → 0 khi n → +∞ và tồn tại giới hạn hữu hạn lim σn = I, không phụ thuộc vào cách chia cung AB cũng như cách chọn các điểm Mi",
+    "filter": null,
+    "type": "condition"
+  }
+]

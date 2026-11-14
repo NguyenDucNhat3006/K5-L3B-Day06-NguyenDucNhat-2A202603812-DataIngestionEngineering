@@ -1,4 +1,4 @@
-strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+strategy,hypothesis,chunking,chunk_size_chars,overlap_chars,embedding_model,embedding_dimensions,vector_store,similarity,filter,documents,content_pages,chunks,top_k,benchmark_questions,dev_questions,test_questions,overall_hit1,overall_hit3,dev_hit1,dev_hit3,test_hit1,test_hit3,coherence,manual_test_grounding,filter_compliance,api_cost_usd,indexing_time,evaluation_time
+A,Fixed windows provide a consistent baseline with local context overlap.,fixed_size,500,100,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,384,PostgreSQL 16 + pgvector,cosine,no,5,249,287,3,20,15,5,6/20 (0.30),10/20 (0.50),4/15 (0.267),6/15 (0.40),2/5 (0.40),4/5 (0.80),17/20,6/10,not applicable,0 (no paid API; local compute cost not measured),not measured,not measured
+B,Paragraph boundaries may retain more coherent evidence than fixed windows.,paragraph_aware,500,0,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,384,PostgreSQL 16 + pgvector,cosine,no,5,249,296,3,20,15,5,6/20 (0.30),10/20 (0.50),4/15 (0.267),7/15 (0.467),2/5 (0.40),3/5 (0.60),16/20,6/10,not applicable,0 (no paid API; local compute cost not measured),not measured,not measured
+C,Question-provided document_id filtering should constrain candidates without changing B vectors.,paragraph_aware,500,0,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,384,PostgreSQL 16 + pgvector,cosine,question_specific_document_id (SQL; on B index),5,249,296,3,20,15,5,6/20 (0.30),10/20 (0.50),4/15 (0.267),7/15 (0.467),2/5 (0.40),3/5 (0.60),16/20,6/10,4/4,0 (no paid API; local compute cost not measured),not measured,not measured

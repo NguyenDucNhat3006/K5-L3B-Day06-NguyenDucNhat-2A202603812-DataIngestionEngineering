@@ -1,0 +1,71 @@
+{
+  "A_fixed": {
+    "overall": {
+      "questions": 20,
+      "hit_at_1_count": 6,
+      "hit_at_1": 0.3,
+      "evidence_hit_at_3_count": 10,
+      "evidence_hit_at_3": 0.5
+    },
+    "dev": {
+      "questions": 15,
+      "hit_at_1_count": 4,
+      "hit_at_1": 0.26666666666666666,
+      "evidence_hit_at_3_count": 6,
+      "evidence_hit_at_3": 0.4
+    },
+    "test": {
+      "questions": 5,
+      "hit_at_1_count": 2,
+      "hit_at_1": 0.4,
+      "evidence_hit_at_3_count": 4,
+      "evidence_hit_at_3": 0.8
+    }
+  },
+  "B_paragraph": {
+    "overall": {
+      "questions": 20,
+      "hit_at_1_count": 6,
+      "hit_at_1": 0.3,
+      "evidence_hit_at_3_count": 10,
+      "evidence_hit_at_3": 0.5
+    },
+    "dev": {
+      "questions": 15,
+      "hit_at_1_count": 4,
+      "hit_at_1": 0.26666666666666666,
+      "evidence_hit_at_3_count": 7,
+      "evidence_hit_at_3": 0.4666666666666667
+    },
+    "test": {
+      "questions": 5,
+      "hit_at_1_count": 2,
+      "hit_at_1": 0.4,
+      "evidence_hit_at_3_count": 3,
+      "evidence_hit_at_3": 0.6
+    }
+  },
+  "C_paragraph_filter": {
+    "overall": {
+      "questions": 20,
+      "hit_at_1_count": 6,
+      "hit_at_1": 0.3,
+      "evidence_hit_at_3_count": 10,
+      "evidence_hit_at_3": 0.5
+    },
+    "dev": {
+      "questions": 15,
+      "hit_at_1_count": 4,
+      "hit_at_1": 0.26666666666666666,
+      "evidence_hit_at_3_count": 7,
+      "evidence_hit_at_3": 0.4666666666666667
+    },
+    "test": {
+      "questions": 5,
+      "hit_at_1_count": 2,
+      "hit_at_1": 0.4,
+      "evidence_hit_at_3_count": 3,
+      "evidence_hit_at_3": 0.6
+    }
+  }
+}

@@ -1,0 +1,16 @@
+﻿strategy,question_id,split,grounding_score,max_score,reason
+A_fixed,q05,test,2,2,"Top-1 states the equivalence, domain assumptions, and partial-derivative condition."
+A_fixed,q09,test,2,2,Top-1 states all three cases for the D Alembert ratio limit.
+A_fixed,q14,test,0,2,Top-3 do not provide the full differentiability definition and required limit conditions.
+A_fixed,q18,test,2,2,"Top-2 specifies subregions Vi, diameters di, and volumes delta Vi."
+A_fixed,q20,test,0,2,Top-3 lack the defining limit of Riemann sums and independence of partition/sample points.
+B_paragraph,q05,test,2,2,"Top-1 states the equivalence, domain assumptions, and partial-derivative condition."
+B_paragraph,q09,test,2,2,Top-1 states all three cases for the D Alembert ratio limit.
+B_paragraph,q14,test,0,2,Top-3 do not provide the full differentiability definition and required limit conditions.
+B_paragraph,q18,test,2,2,"Top-2 specifies subregions Vi, diameters di, and volumes delta Vi."
+B_paragraph,q20,test,0,2,Top-3 lack the defining limit of Riemann sums and independence of partition/sample points.
+C_paragraph_filter,q05,test,2,2,"Top-1 states the equivalence, domain assumptions, and partial-derivative condition."
+C_paragraph_filter,q09,test,2,2,Top-1 states all three cases for the D Alembert ratio limit.
+C_paragraph_filter,q14,test,0,2,Top-3 do not provide the full differentiability definition and required limit conditions.
+C_paragraph_filter,q18,test,2,2,"Top-2 specifies subregions Vi, diameters di, and volumes delta Vi."
+C_paragraph_filter,q20,test,0,2,Top-3 lack the defining limit of Riemann sums and independence of partition/sample points.
