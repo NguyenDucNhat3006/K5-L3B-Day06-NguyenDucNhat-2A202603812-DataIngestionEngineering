@@ -1,0 +1,1202 @@
+﻿
+================================================================================
+STRATEGY: A_fixed
+
+--------------------------------------------------------------------------------
+QUESTION: q05 Trong chương về tích phân đường và tích phân mặt, điều kiện nào tương đương với việc tích phân đường loại 2 chỉ phụ thuộc hai đầu mút A, B mà không phụ thuộc đường đi?
+EXPECTED: Trong miền đơn liên D, với P, Q và các đạo hàm liên tục, điều kiện ∂P/∂y = ∂Q/∂x tương đương với việc tích phân chỉ phụ thuộc hai đầu mút A, B mà không phụ thuộc đường đi.
+GOLD: ch5 20
+
+RANK 1 | ch5 page 20 | score=0.6856
+5.2.4 Điều kiện để tích phân đường loại 2 không phụ thuộc
+đường lấy tích phân
+Định lý 5.2
+Giả sử hàm số P (x, y), Q(x, y) và các đạo hàm của chúng liên tục trong một miền
+đơn liên D. Khi đó các mệnh đề sau đây tương đương với nhau:
+(a) ∂P∂y = ∂Q∂x , ∀(x, y) ∈ D;
+(b)
+H
+L
+P dx+ Qdy = 0 với mọi đường kín L ⊂ D;
+(c) Tích phân
+R
+↷
+AB
+P dx+ Qdy chỉ phụ thuộc hai đầu mút A, Bmà không phụ thuộc
+cung
+⌢
+AB ⊂ D;
+(d) P dx+ Qdy là vi phân toàn phần của một hàm u(x, y) nào đó trong D.
+TS. Phùng Minh Đức (BMTL
+
+RANK 2 | ch4 page 5 | score=0.6678
+4.1.2 Các mặt bậc 2
+Các mặt bậc 2: là tập hợp những điểm trong không gian Oxyz thỏa mãn phương
+trình
+Ax2 + By 2 + Cz 2 + Dxy + Eyz + F zx+ Gx + Hy + J z+ K = 0
+trong đó A, B, . . . , Klà những hằng số.
+Bằng cách nhóm và đổi biến, ta có thể đưa các mặt bậc 2 về một trong các mặt
+sau:
+TS. Phùng Minh Đức (BMTL) 5/58
+
+RANK 3 | ch5 page 16 | score=0.6661
+4.2.2 Cách tính tích phân đường loại 2
+• Nếu cung
+⌢
+AB trơn từng khúc và các hàm P, Qliên tục trên
+⌢
+AB thì tồn tại tích
+phân đường loại 2 của P, Qdọc theo cung
+⌢
+AB.
+• Nếu C ∈
+⌢
+AB thì
+Z
+↷
+AB
+P (x, y)dx + Q(x, y)dy =
+Z
+↷
+AC
+P (x, y)dx + Q(x, y)dy +
+Z
+↷
+CB
+P (x, y)dx + Q(x, y)dy.
+• Nếu đổi chiều lấy tích phân dọc theo cung
+⌢
+BA thì tích phân đường loại 2 bị đổi
+dấu Z
+↷
+BA
+P (x, y)dx + Q(x, y)dy = −
+Z
+↷
+AB
+P (x, y)dx + Q(x, y)dy.
+TS. Phùng Minh Đức (BMTL) 16/23
+
+--------------------------------------------------------------------------------
+QUESTION: q09 Quy tắc D'Alembert kết luận thế nào khi giới hạn un+1/un bằng ℓ nhỏ hơn 1, lớn hơn 1 hoặc bằng 1?
+EXPECTED: Chuỗi số dương hội tụ nếu ℓ<1, phân kỳ nếu ℓ>1, và quy tắc không cho kết luận nếu ℓ=1.
+GOLD: ch2 19
+
+RANK 1 | ch2 page 19 | score=0.7498
+2.2.3 Quy tắc D’Alembert và Quy tắc Cauchy
+Định lý 2.6
+(Quy tắc D’Alembert) Chuỗi số dương
+∞X
+n=1
+un có limn→+∞
+un+1
+un
+= ℓ
+▶ hội tụ khi ℓ <1;
+▶ phân kỳ khi ℓ >1;
+▶ không có kết luận khi ℓ = 1.
+TS. Phùng Minh Đức (BMTL) 19/46
+
+RANK 2 | ch2 page 22 | score=0.7156
+Ví dụ 2.10
+Xét sự hội tụ của chuỗi có số hạng tổng quát un =
+(
+n/2n với n lẻ
+1/2n với n chẵn.
+Giải:
+• Chú ý rằng, ta có un+1
+un
+=
+(
+1
+2n với n lẻ
+n+1
+2 với n chẵn nên ∄ limn→+∞
+un+1
+un
+, do đó không
+áp dụng quy tắc D’Alembert được.
+• Áp dụng quy tắc Cauchy: trước hết ta có n√un =
+(
+n√n/2 với n lẻ
+1/2 với n chẵn, và ngoài
+ra lim
+n→+∞
+n√n = 1, do đó ta có
+lim
+n→+∞
+n√un = 12 < 1.
+Vậy chuỗi đã cho hội tụ.
+TS. Phùng Minh Đức (BMTL) 22/46
+
+RANK 3 | ch2 page 23 | score=0.7098
+D’Alembert vs Cauchy
+Ví dụ 2.11
+Xét sự hội tụ của chuỗi
+∞X
+n=1
+n2
+2n .
+Giải:
+• (Áp dụng quy tắc D’Alembert) Đặt un = n22n , ta có limn→+∞ un+1un = limn→+∞ (n + 1)22n2 =
+lim
+n→+∞
+(1 +1n )2
+2 = 12 , do đó chuỗi đã cho hội tụ.
+• (Áp dụng quy tắc Cauchy) Đặt un = n22n , ta có limn→+∞ n√un = limn→+∞ n√n22 =
+lim
+n→+∞
+( n√n)2
+2 = 12 , do đó chuỗi đã cho hội tụ.
+TS. Phùng Minh Đức (BMTL) 23/46
+
+--------------------------------------------------------------------------------
+QUESTION: q14 Khi nào hàm f(x,y) được gọi là khả vi tại M0 theo định nghĩa vi phân toàn phần?
+EXPECTED: f khả vi tại M0 nếu số gia toàn phần có thể biểu diễn thành phần tuyến tính AΔx+BΔy cộng với αΔx+βΔy, trong đó α và β tiến tới 0 khi M tiến tới M0.
+GOLD: ch3 22
+
+RANK 1 | ch3 page 47 | score=0.8029
+3.5.1 Cực trị của hàm nhiều biến
+Cho hàm z = f (x, y) xác định trên miền D và M0 là một điểm trong của D.
+▶ Điểm M0 được gọi là một điểm cực tiểu (địa phương) của f nếu tồn tại một
+lân cận V của M0 sao cho
+f (M0) ≤ f (M ), ∀M ∈ V.
+▶ Điểm M0 được gọi là một điểm cực đại (địa phương) của f nếu tồn tại một lân
+cận V của M0 sao cho
+f (M0) ≥ f (M ), ∀M ∈ V.
+▶ Điểm cực đại và cực tiểu của một hàm số được gọi chung là điểm cực trị.
+▶ Điểm M0 được gọi là một điểm tới hạn của hàm f nếu - không tồn tại í
+
+RANK 2 | ch3 page 22 | score=0.8016
+y
+được gọi là vi phân toàn phần của hàm f tại M0.
+▶ Hàm z = f (x, y) được gọi là khả vi trên miền D nếu nó khả vi tại mọi điểm
+của miền ấy.
+TS. Phùng Minh Đức (BMTL) 22/62
+
+RANK 3 | ch1 page 22 | score=0.7491
+1.1.4 Đạo hàm và vi phân
+Định nghĩa 1.7
+Hàm số f (x) xác định trên khoảng (a, b) được gọi là khả vi tại x0 ∈ (a, b) nếu tồn
+tại giới hạn hữu hạn
+lim
+x→x0
+f (x) − f (x0)
+x − x0
+.
+Giá trị giới hạn hữu hạn đó gọi là đạo hàm của f tại x0, ký hiệu là f ′(x0).
+Hàm f được gọi là khả vi trên (a, b) nếu nó khả vi tại mọi điểm trong (a, b).
+TS. Phùng Minh Đức (BMTL) 22/62
+
+--------------------------------------------------------------------------------
+QUESTION: q18 Trong chương về tích phân nhiều biến, tích phân bội ba được xây dựng bằng cách chia miền V thành những thành phần nào?
+EXPECTED: Miền V được chia thành n mảnh nhỏ Vi, mỗi mảnh có đường kính di và thể tích ΔVi.
+GOLD: ch4 42
+
+RANK 1 | ch4 page 44 | score=0.7061
+▶ Trong công thức tích phân bội ba, V gọi là miền lấy tích phân, f gọi là hàm
+dưới dấu tích phân, dV gọi là yếu tố thể tích.
+▶ Hàm f (x, y, z) liên tục trên miền đóng, bị chặn V thì khả tích trên miền đó.
+▶ Nếu miền V được chia thành 2 miền V1, V2 không dẫm lên nhau thì
+Z Z Z
+V
+f (x, y, z)dV =
+Z Z Z
+V1
+f (x, y, z)dV +
+Z Z Z
+V2
+f (x, y, z)dV.
+▶ Chia miền V bởi các mặt song song với Oxy, Oyz, Oxz, ta được dV = dxdydz,
+do đó
+I =
+Z Z Z
+V
+f (x, y, z)dV =
+Z Z Z
+V
+f (x, y, z)dxdydz.
+TS. Phùng Minh Đức
+
+RANK 2 | ch4 page 42 | score=0.6673
+4.3.1 Định nghĩa tích phân bội ba
+Định nghĩa 4.2
+Cho hàm f (x, y, z) xác định trên một miền đóng
+và bị chặn V ⊂ R3. Chia V thành n mảnh nhỏ
+Vi, i= 1, . . . , n. Giả sử mỗi mảnh đó có đường
+kính tương ứng là di = max{d(M, N), M, N∈ Vi}
+và thể tích tương ứng là ∆Vi, i= 1, . . . , n.
+Lấy tùy ý (xi, yi, zi) ∈ Vi và lập tổng
+σn =
+nX
+i=1
+f (xi, yi, zi)∆Vi.
+TS. Phùng Minh Đức (BMTL) 42/58
+
+RANK 3 | ch3 page 2 | score=0.6651
+Chương 3: Phép tính vi phân hàm nhiều biến
+3.1 Các khái niệm cơ bản về hàm nhiều biến
+3.2 Giới hạn
+3.3 Đạo hàm và vi phân
+3.4 Hàm ẩn
+3.5 Cực trị
+TS. Phùng Minh Đức (BMTL) 2/62
+
+--------------------------------------------------------------------------------
+QUESTION: q20 Tích phân đường loại 1 của hàm f dọc theo cung AB được định nghĩa thông qua giới hạn nào?
+EXPECTED: Đó là giới hạn hữu hạn I của tổng σn khi kích thước lớn nhất của các cung con tiến tới 0 và n tiến tới vô cùng, với giới hạn không phụ thuộc cách chia cung hay cách chọn các điểm Mi.
+GOLD: ch5 5
+
+RANK 1 | ch5 page 6 | score=0.7759
+5.1.2 Cách tính tích phân đường loại 1
+• Cung trơn:
+▶ Cung
+⌢
+AB được cho bởi phương trình y = f (x), x∈ [a, b] được gọi là trơn nếu
+hàm f có đạo hàm liên tục trên [a, b].
+▶ Cung
+⌢
+AB được cho bởi phương trình tham số x = x(t), y= y(t), t∈ [t1, t2]
+được gọi là trơn nếu các hàm x(t), y(t) có đạo hàm liên tục trên [t1, t2].
+▶ Cung
+⌢
+AB được gọi là trơn từng khúc nếu nó gồm hữu hạn cung trơn.
+• Cho cung
+⌢
+AB trơn (hoặc trơn từng khúc). Nếu hàm f (x, y) liên tục trên
+⌢
+AB thì nó
+cũng khả tích trên đó
+
+RANK 2 | ch1 page 40 | score=0.7522
+1.2.1 Tích phân bất định
+Định nghĩa 1.9
+Hàm F được gọi là một nguyên hàm của f trên khoảng I ⊂ R nếu
+F ′(x) = f (x), ∀x ∈ I.
+Định lý 1.9
+Nếu F là một nguyên hàm của f trên khoảng I thì họ tất cả các nguyên hàm của f
+được gọi là tích phân bất định của f là
+Z
+f (x)dx = F (x) + C
+với C là một hằng số tùy ý.
+TS. Phùng Minh Đức (BMTL) 41/62
+
+RANK 3 | ch1 page 26 | score=0.7255
+khả vi n lần trên (a, b), và đạo hàm của f (n−1)
+gọi là đạo hàm cấp n của f , ký hiệu là f (n). Như vậy
+f (n) = (f (n−1))′.
+Tương tự, ta cũng có vi phân cấp cao của hàm f như sau:
+d2f = d(d f), . . . , dnf = d(dn−1f ).
+TS. Phùng Minh Đức (BMTL) 26/62
+
+================================================================================
+STRATEGY: B_paragraph
+
+--------------------------------------------------------------------------------
+QUESTION: q05 Trong chương về tích phân đường và tích phân mặt, điều kiện nào tương đương với việc tích phân đường loại 2 chỉ phụ thuộc hai đầu mút A, B mà không phụ thuộc đường đi?
+EXPECTED: Trong miền đơn liên D, với P, Q và các đạo hàm liên tục, điều kiện ∂P/∂y = ∂Q/∂x tương đương với việc tích phân chỉ phụ thuộc hai đầu mút A, B mà không phụ thuộc đường đi.
+GOLD: ch5 20
+
+RANK 1 | ch5 page 20 | score=0.6856
+5.2.4 Điều kiện để tích phân đường loại 2 không phụ thuộc
+
+đường lấy tích phân
+
+Định lý 5.2
+
+Giả sử hàm số P (x, y), Q(x, y) và các đạo hàm của chúng liên tục trong một miền
+
+đơn liên D. Khi đó các mệnh đề sau đây tương đương với nhau:
+
+(a) ∂P∂y = ∂Q∂x , ∀(x, y) ∈ D;
+
+(b)
+
+H
+
+L
+
+P dx+ Qdy = 0 với mọi đường kín L ⊂ D;
+
+(c) Tích phân
+
+R
+
+↷
+
+AB
+
+P dx+ Qdy chỉ phụ thuộc hai đầu mút A, Bmà không phụ thuộc
+
+cung
+
+⌢
+
+AB ⊂ D;
+
+(d) P dx+ Qdy là vi phân toàn phần của một hàm u(x, y) nào đó trong D.
+
+RANK 2 | ch3 page 10 | score=0.6732
+hạn bởi một mặt kín; gọi là đa liên nếu nó bị giới hạn
+
+bởi nhiều mặt kín rời nhau đôi một.
+
+TS. Phùng Minh Đức (BMTL) 10/62
+
+RANK 3 | ch4 page 5 | score=0.6678
+4.1.2 Các mặt bậc 2
+
+Các mặt bậc 2: là tập hợp những điểm trong không gian Oxyz thỏa mãn phương
+
+trình
+
+Ax2 + By 2 + Cz 2 + Dxy + Eyz + F zx+ Gx + Hy + J z+ K = 0
+
+trong đó A, B, . . . , Klà những hằng số.
+
+Bằng cách nhóm và đổi biến, ta có thể đưa các mặt bậc 2 về một trong các mặt
+
+sau:
+
+TS. Phùng Minh Đức (BMTL) 5/58
+
+--------------------------------------------------------------------------------
+QUESTION: q09 Quy tắc D'Alembert kết luận thế nào khi giới hạn un+1/un bằng ℓ nhỏ hơn 1, lớn hơn 1 hoặc bằng 1?
+EXPECTED: Chuỗi số dương hội tụ nếu ℓ<1, phân kỳ nếu ℓ>1, và quy tắc không cho kết luận nếu ℓ=1.
+GOLD: ch2 19
+
+RANK 1 | ch2 page 19 | score=0.7498
+2.2.3 Quy tắc D’Alembert và Quy tắc Cauchy
+
+Định lý 2.6
+
+(Quy tắc D’Alembert) Chuỗi số dương
+
+∞X
+
+n=1
+
+un có limn→+∞
+
+un+1
+
+un
+
+= ℓ
+
+▶ hội tụ khi ℓ <1;
+
+▶ phân kỳ khi ℓ >1;
+
+▶ không có kết luận khi ℓ = 1.
+
+TS. Phùng Minh Đức (BMTL) 19/46
+
+RANK 2 | ch2 page 22 | score=0.7156
+Ví dụ 2.10
+
+Xét sự hội tụ của chuỗi có số hạng tổng quát un =
+
+(
+
+n/2n với n lẻ
+
+1/2n với n chẵn.
+
+Giải:
+
+• Chú ý rằng, ta có un+1
+
+un
+
+=
+
+(
+
+1
+
+2n với n lẻ
+
+n+1
+
+2 với n chẵn nên ∄ limn→+∞
+
+un+1
+
+un
+
+, do đó không
+
+áp dụng quy tắc D’Alembert được.
+
+• Áp dụng quy tắc Cauchy: trước hết ta có n√un =
+
+(
+
+n√n/2 với n lẻ
+
+1/2 với n chẵn, và ngoài
+
+ra lim
+
+n→+∞
+
+n√n = 1, do đó ta có
+
+lim
+
+n→+∞
+
+n√un = 12 < 1.
+
+Vậy chuỗi đã cho hội tụ.
+
+TS. Phùng Minh Đức (BMTL) 22/46
+
+RANK 3 | ch2 page 23 | score=0.7098
+D’Alembert vs Cauchy
+
+Ví dụ 2.11
+
+Xét sự hội tụ của chuỗi
+
+∞X
+
+n=1
+
+n2
+
+2n .
+
+Giải:
+
+• (Áp dụng quy tắc D’Alembert) Đặt un = n22n , ta có limn→+∞ un+1un = limn→+∞ (n + 1)22n2 =
+
+lim
+
+n→+∞
+
+(1 +1n )2
+
+2 = 12 , do đó chuỗi đã cho hội tụ.
+
+• (Áp dụng quy tắc Cauchy) Đặt un = n22n , ta có limn→+∞ n√un = limn→+∞ n√n22 =
+
+lim
+
+n→+∞
+
+( n√n)2
+
+2 = 12 , do đó chuỗi đã cho hội tụ.
+
+TS. Phùng Minh Đức (BMTL) 23/46
+
+--------------------------------------------------------------------------------
+QUESTION: q14 Khi nào hàm f(x,y) được gọi là khả vi tại M0 theo định nghĩa vi phân toàn phần?
+EXPECTED: f khả vi tại M0 nếu số gia toàn phần có thể biểu diễn thành phần tuyến tính AΔx+BΔy cộng với αΔx+βΔy, trong đó α và β tiến tới 0 khi M tiến tới M0.
+GOLD: ch3 22
+
+RANK 1 | ch3 page 47 | score=0.8029
+3.5.1 Cực trị của hàm nhiều biến
+
+Cho hàm z = f (x, y) xác định trên miền D và M0 là một điểm trong của D.
+
+▶ Điểm M0 được gọi là một điểm cực tiểu (địa phương) của f nếu tồn tại một
+
+lân cận V của M0 sao cho
+
+f (M0) ≤ f (M ), ∀M ∈ V.
+
+▶ Điểm M0 được gọi là một điểm cực đại (địa phương) của f nếu tồn tại một lân
+
+cận V của M0 sao cho
+
+f (M0) ≥ f (M ), ∀M ∈ V.
+
+▶ Điểm cực đại và cực tiểu của một hàm số được gọi chung là điểm cực trị.
+
+RANK 2 | ch3 page 47 | score=0.7612
+▶ Điểm M0 được gọi là một điểm tới hạn của hàm f nếu - không tồn tại ít nhất một trong hai đạo hàm riêng của f tại M0
+
+- tồn tại các đạo hàm riêng của f tại M0 và f ′x(M0) = f ′y(M0) = 0.
+
+TS. Phùng Minh Đức (BMTL) 47/62
+
+RANK 3 | ch1 page 22 | score=0.7491
+1.1.4 Đạo hàm và vi phân
+
+Định nghĩa 1.7
+
+Hàm số f (x) xác định trên khoảng (a, b) được gọi là khả vi tại x0 ∈ (a, b) nếu tồn
+
+tại giới hạn hữu hạn
+
+lim
+
+x→x0
+
+f (x) − f (x0)
+
+x − x0
+
+.
+
+Giá trị giới hạn hữu hạn đó gọi là đạo hàm của f tại x0, ký hiệu là f ′(x0).
+
+Hàm f được gọi là khả vi trên (a, b) nếu nó khả vi tại mọi điểm trong (a, b).
+
+TS. Phùng Minh Đức (BMTL) 22/62
+
+--------------------------------------------------------------------------------
+QUESTION: q18 Trong chương về tích phân nhiều biến, tích phân bội ba được xây dựng bằng cách chia miền V thành những thành phần nào?
+EXPECTED: Miền V được chia thành n mảnh nhỏ Vi, mỗi mảnh có đường kính di và thể tích ΔVi.
+GOLD: ch4 42
+
+RANK 1 | ch4 page 44 | score=0.7061
+▶ Trong công thức tích phân bội ba, V gọi là miền lấy tích phân, f gọi là hàm
+
+dưới dấu tích phân, dV gọi là yếu tố thể tích.
+
+▶ Hàm f (x, y, z) liên tục trên miền đóng, bị chặn V thì khả tích trên miền đó.
+
+▶ Nếu miền V được chia thành 2 miền V1, V2 không dẫm lên nhau thì
+
+Z Z Z
+
+V
+
+f (x, y, z)dV =
+
+Z Z Z
+
+V1
+
+f (x, y, z)dV +
+
+Z Z Z
+
+V2
+
+f (x, y, z)dV.
+
+▶ Chia miền V bởi các mặt song song với Oxy, Oyz, Oxz, ta được dV = dxdydz,
+
+do đó
+
+I =
+
+Z Z Z
+
+V
+
+f (x, y, z)dV =
+
+Z Z Z
+
+V
+
+RANK 2 | ch4 page 42 | score=0.6673
+4.3.1 Định nghĩa tích phân bội ba
+
+Định nghĩa 4.2
+
+Cho hàm f (x, y, z) xác định trên một miền đóng
+
+và bị chặn V ⊂ R3. Chia V thành n mảnh nhỏ
+
+Vi, i= 1, . . . , n. Giả sử mỗi mảnh đó có đường
+
+kính tương ứng là di = max{d(M, N), M, N∈ Vi}
+
+và thể tích tương ứng là ∆Vi, i= 1, . . . , n.
+
+Lấy tùy ý (xi, yi, zi) ∈ Vi và lập tổng
+
+σn =
+
+nX
+
+i=1
+
+f (xi, yi, zi)∆Vi.
+
+TS. Phùng Minh Đức (BMTL) 42/58
+
+RANK 3 | ch3 page 2 | score=0.6651
+Chương 3: Phép tính vi phân hàm nhiều biến
+
+3.1 Các khái niệm cơ bản về hàm nhiều biến
+
+3.2 Giới hạn
+
+3.3 Đạo hàm và vi phân
+
+3.4 Hàm ẩn
+
+3.5 Cực trị
+
+TS. Phùng Minh Đức (BMTL) 2/62
+
+--------------------------------------------------------------------------------
+QUESTION: q20 Tích phân đường loại 1 của hàm f dọc theo cung AB được định nghĩa thông qua giới hạn nào?
+EXPECTED: Đó là giới hạn hữu hạn I của tổng σn khi kích thước lớn nhất của các cung con tiến tới 0 và n tiến tới vô cùng, với giới hạn không phụ thuộc cách chia cung hay cách chọn các điểm Mi.
+GOLD: ch5 5
+
+RANK 1 | ch5 page 6 | score=0.7759
+5.1.2 Cách tính tích phân đường loại 1
+
+• Cung trơn:
+
+▶ Cung
+
+⌢
+
+AB được cho bởi phương trình y = f (x), x∈ [a, b] được gọi là trơn nếu
+
+hàm f có đạo hàm liên tục trên [a, b].
+
+▶ Cung
+
+⌢
+
+AB được cho bởi phương trình tham số x = x(t), y= y(t), t∈ [t1, t2]
+
+được gọi là trơn nếu các hàm x(t), y(t) có đạo hàm liên tục trên [t1, t2].
+
+▶ Cung
+
+⌢
+
+AB được gọi là trơn từng khúc nếu nó gồm hữu hạn cung trơn.
+
+• Cho cung
+
+⌢
+
+AB trơn (hoặc trơn từng khúc). Nếu hàm f (x, y) liên tục trên
+
+⌢
+
+AB thì nó
+
+RANK 2 | ch1 page 40 | score=0.7522
+1.2.1 Tích phân bất định
+
+Định nghĩa 1.9
+
+Hàm F được gọi là một nguyên hàm của f trên khoảng I ⊂ R nếu
+
+F ′(x) = f (x), ∀x ∈ I.
+
+Định lý 1.9
+
+Nếu F là một nguyên hàm của f trên khoảng I thì họ tất cả các nguyên hàm của f
+
+được gọi là tích phân bất định của f là
+
+Z
+
+f (x)dx = F (x) + C
+
+với C là một hằng số tùy ý.
+
+TS. Phùng Minh Đức (BMTL) 41/62
+
+RANK 3 | ch1 page 26 | score=0.7413
+gọi là đạo hàm cấp n của f , ký hiệu là f (n). Như vậy
+
+f (n) = (f (n−1))′.
+
+Tương tự, ta cũng có vi phân cấp cao của hàm f như sau:
+
+d2f = d(d f), . . . , dnf = d(dn−1f ).
+
+TS. Phùng Minh Đức (BMTL) 26/62
+
+================================================================================
+STRATEGY: C_paragraph_filter
+
+--------------------------------------------------------------------------------
+QUESTION: q05 Trong chương về tích phân đường và tích phân mặt, điều kiện nào tương đương với việc tích phân đường loại 2 chỉ phụ thuộc hai đầu mút A, B mà không phụ thuộc đường đi?
+EXPECTED: Trong miền đơn liên D, với P, Q và các đạo hàm liên tục, điều kiện ∂P/∂y = ∂Q/∂x tương đương với việc tích phân chỉ phụ thuộc hai đầu mút A, B mà không phụ thuộc đường đi.
+GOLD: ch5 20
+
+RANK 1 | ch5 page 20 | score=0.6856
+5.2.4 Điều kiện để tích phân đường loại 2 không phụ thuộc
+
+đường lấy tích phân
+
+Định lý 5.2
+
+Giả sử hàm số P (x, y), Q(x, y) và các đạo hàm của chúng liên tục trong một miền
+
+đơn liên D. Khi đó các mệnh đề sau đây tương đương với nhau:
+
+(a) ∂P∂y = ∂Q∂x , ∀(x, y) ∈ D;
+
+(b)
+
+H
+
+L
+
+P dx+ Qdy = 0 với mọi đường kín L ⊂ D;
+
+(c) Tích phân
+
+R
+
+↷
+
+AB
+
+P dx+ Qdy chỉ phụ thuộc hai đầu mút A, Bmà không phụ thuộc
+
+cung
+
+⌢
+
+AB ⊂ D;
+
+(d) P dx+ Qdy là vi phân toàn phần của một hàm u(x, y) nào đó trong D.
+
+RANK 2 | ch5 page 16 | score=0.6661
+4.2.2 Cách tính tích phân đường loại 2
+
+• Nếu cung
+
+⌢
+
+AB trơn từng khúc và các hàm P, Qliên tục trên
+
+⌢
+
+AB thì tồn tại tích
+
+phân đường loại 2 của P, Qdọc theo cung
+
+⌢
+
+AB.
+
+• Nếu C ∈
+
+⌢
+
+AB thì
+
+Z
+
+↷
+
+AB
+
+P (x, y)dx + Q(x, y)dy =
+
+Z
+
+↷
+
+AC
+
+P (x, y)dx + Q(x, y)dy +
+
+Z
+
+↷
+
+CB
+
+P (x, y)dx + Q(x, y)dy.
+
+• Nếu đổi chiều lấy tích phân dọc theo cung
+
+⌢
+
+BA thì tích phân đường loại 2 bị đổi
+
+dấu Z
+
+↷
+
+BA
+
+P (x, y)dx + Q(x, y)dy = −
+
+Z
+
+↷
+
+AB
+
+P (x, y)dx + Q(x, y)dy.
+
+TS. Phùng Minh Đức (BMTL) 16/23
+
+RANK 3 | ch5 page 13 | score=0.6459
+5.2 Tích phân đường loại 2
+
+5.2.1 Định nghĩa tích phân đường loại 2
+
+5.2.2 Cách tính tích phân đường loại 2
+
+5.2.3 Công thức Green
+
+5.2.4 Điều kiện để tích phân đường loại 2 không phụ thuộc đường lấy tích phân
+
+5.2.5 Tích phân đường loại 2 trong không gian
+
+TS. Phùng Minh Đức (BMTL) 13/23
+
+--------------------------------------------------------------------------------
+QUESTION: q09 Quy tắc D'Alembert kết luận thế nào khi giới hạn un+1/un bằng ℓ nhỏ hơn 1, lớn hơn 1 hoặc bằng 1?
+EXPECTED: Chuỗi số dương hội tụ nếu ℓ<1, phân kỳ nếu ℓ>1, và quy tắc không cho kết luận nếu ℓ=1.
+GOLD: ch2 19
+
+RANK 1 | ch2 page 19 | score=0.7498
+2.2.3 Quy tắc D’Alembert và Quy tắc Cauchy
+
+Định lý 2.6
+
+(Quy tắc D’Alembert) Chuỗi số dương
+
+∞X
+
+n=1
+
+un có limn→+∞
+
+un+1
+
+un
+
+= ℓ
+
+▶ hội tụ khi ℓ <1;
+
+▶ phân kỳ khi ℓ >1;
+
+▶ không có kết luận khi ℓ = 1.
+
+TS. Phùng Minh Đức (BMTL) 19/46
+
+RANK 2 | ch2 page 22 | score=0.7156
+Ví dụ 2.10
+
+Xét sự hội tụ của chuỗi có số hạng tổng quát un =
+
+(
+
+n/2n với n lẻ
+
+1/2n với n chẵn.
+
+Giải:
+
+• Chú ý rằng, ta có un+1
+
+un
+
+=
+
+(
+
+1
+
+2n với n lẻ
+
+n+1
+
+2 với n chẵn nên ∄ limn→+∞
+
+un+1
+
+un
+
+, do đó không
+
+áp dụng quy tắc D’Alembert được.
+
+• Áp dụng quy tắc Cauchy: trước hết ta có n√un =
+
+(
+
+n√n/2 với n lẻ
+
+1/2 với n chẵn, và ngoài
+
+ra lim
+
+n→+∞
+
+n√n = 1, do đó ta có
+
+lim
+
+n→+∞
+
+n√un = 12 < 1.
+
+Vậy chuỗi đã cho hội tụ.
+
+TS. Phùng Minh Đức (BMTL) 22/46
+
+RANK 3 | ch2 page 23 | score=0.7098
+D’Alembert vs Cauchy
+
+Ví dụ 2.11
+
+Xét sự hội tụ của chuỗi
+
+∞X
+
+n=1
+
+n2
+
+2n .
+
+Giải:
+
+• (Áp dụng quy tắc D’Alembert) Đặt un = n22n , ta có limn→+∞ un+1un = limn→+∞ (n + 1)22n2 =
+
+lim
+
+n→+∞
+
+(1 +1n )2
+
+2 = 12 , do đó chuỗi đã cho hội tụ.
+
+• (Áp dụng quy tắc Cauchy) Đặt un = n22n , ta có limn→+∞ n√un = limn→+∞ n√n22 =
+
+lim
+
+n→+∞
+
+( n√n)2
+
+2 = 12 , do đó chuỗi đã cho hội tụ.
+
+TS. Phùng Minh Đức (BMTL) 23/46
+
+--------------------------------------------------------------------------------
+QUESTION: q14 Khi nào hàm f(x,y) được gọi là khả vi tại M0 theo định nghĩa vi phân toàn phần?
+EXPECTED: f khả vi tại M0 nếu số gia toàn phần có thể biểu diễn thành phần tuyến tính AΔx+BΔy cộng với αΔx+βΔy, trong đó α và β tiến tới 0 khi M tiến tới M0.
+GOLD: ch3 22
+
+RANK 1 | ch3 page 47 | score=0.8029
+3.5.1 Cực trị của hàm nhiều biến
+
+Cho hàm z = f (x, y) xác định trên miền D và M0 là một điểm trong của D.
+
+▶ Điểm M0 được gọi là một điểm cực tiểu (địa phương) của f nếu tồn tại một
+
+lân cận V của M0 sao cho
+
+f (M0) ≤ f (M ), ∀M ∈ V.
+
+▶ Điểm M0 được gọi là một điểm cực đại (địa phương) của f nếu tồn tại một lân
+
+cận V của M0 sao cho
+
+f (M0) ≥ f (M ), ∀M ∈ V.
+
+▶ Điểm cực đại và cực tiểu của một hàm số được gọi chung là điểm cực trị.
+
+RANK 2 | ch3 page 47 | score=0.7612
+▶ Điểm M0 được gọi là một điểm tới hạn của hàm f nếu - không tồn tại ít nhất một trong hai đạo hàm riêng của f tại M0
+
+- tồn tại các đạo hàm riêng của f tại M0 và f ′x(M0) = f ′y(M0) = 0.
+
+TS. Phùng Minh Đức (BMTL) 47/62
+
+RANK 3 | ch1 page 22 | score=0.7491
+1.1.4 Đạo hàm và vi phân
+
+Định nghĩa 1.7
+
+Hàm số f (x) xác định trên khoảng (a, b) được gọi là khả vi tại x0 ∈ (a, b) nếu tồn
+
+tại giới hạn hữu hạn
+
+lim
+
+x→x0
+
+f (x) − f (x0)
+
+x − x0
+
+.
+
+Giá trị giới hạn hữu hạn đó gọi là đạo hàm của f tại x0, ký hiệu là f ′(x0).
+
+Hàm f được gọi là khả vi trên (a, b) nếu nó khả vi tại mọi điểm trong (a, b).
+
+TS. Phùng Minh Đức (BMTL) 22/62
+
+--------------------------------------------------------------------------------
+QUESTION: q18 Trong chương về tích phân nhiều biến, tích phân bội ba được xây dựng bằng cách chia miền V thành những thành phần nào?
+EXPECTED: Miền V được chia thành n mảnh nhỏ Vi, mỗi mảnh có đường kính di và thể tích ΔVi.
+GOLD: ch4 42
+
+RANK 1 | ch4 page 44 | score=0.7061
+▶ Trong công thức tích phân bội ba, V gọi là miền lấy tích phân, f gọi là hàm
+
+dưới dấu tích phân, dV gọi là yếu tố thể tích.
+
+▶ Hàm f (x, y, z) liên tục trên miền đóng, bị chặn V thì khả tích trên miền đó.
+
+▶ Nếu miền V được chia thành 2 miền V1, V2 không dẫm lên nhau thì
+
+Z Z Z
+
+V
+
+f (x, y, z)dV =
+
+Z Z Z
+
+V1
+
+f (x, y, z)dV +
+
+Z Z Z
+
+V2
+
+f (x, y, z)dV.
+
+▶ Chia miền V bởi các mặt song song với Oxy, Oyz, Oxz, ta được dV = dxdydz,
+
+do đó
+
+I =
+
+Z Z Z
+
+V
+
+f (x, y, z)dV =
+
+Z Z Z
+
+V
+
+RANK 2 | ch4 page 42 | score=0.6673
+4.3.1 Định nghĩa tích phân bội ba
+
+Định nghĩa 4.2
+
+Cho hàm f (x, y, z) xác định trên một miền đóng
+
+và bị chặn V ⊂ R3. Chia V thành n mảnh nhỏ
+
+Vi, i= 1, . . . , n. Giả sử mỗi mảnh đó có đường
+
+kính tương ứng là di = max{d(M, N), M, N∈ Vi}
+
+và thể tích tương ứng là ∆Vi, i= 1, . . . , n.
+
+Lấy tùy ý (xi, yi, zi) ∈ Vi và lập tổng
+
+σn =
+
+nX
+
+i=1
+
+f (xi, yi, zi)∆Vi.
+
+TS. Phùng Minh Đức (BMTL) 42/58
+
+RANK 3 | ch4 page 41 | score=0.6508
+4.3: Tích phân bội ba
+
+4.3.1 Định nghĩa tích phân bội ba
+
+4.3.2 Cách tính tích phân bội ba
+
+4.3.3 Đổi biến số trong tích phân bội ba
+
+4.3.4 Ứng dụng của tích phân bội ba
+
+TS. Phùng Minh Đức (BMTL) 41/58
+
+--------------------------------------------------------------------------------
+QUESTION: q20 Tích phân đường loại 1 của hàm f dọc theo cung AB được định nghĩa thông qua giới hạn nào?
+EXPECTED: Đó là giới hạn hữu hạn I của tổng σn khi kích thước lớn nhất của các cung con tiến tới 0 và n tiến tới vô cùng, với giới hạn không phụ thuộc cách chia cung hay cách chọn các điểm Mi.
+GOLD: ch5 5
+
+RANK 1 | ch5 page 6 | score=0.7759
+5.1.2 Cách tính tích phân đường loại 1
+
+• Cung trơn:
+
+▶ Cung
+
+⌢
+
+AB được cho bởi phương trình y = f (x), x∈ [a, b] được gọi là trơn nếu
+
+hàm f có đạo hàm liên tục trên [a, b].
+
+▶ Cung
+
+⌢
+
+AB được cho bởi phương trình tham số x = x(t), y= y(t), t∈ [t1, t2]
+
+được gọi là trơn nếu các hàm x(t), y(t) có đạo hàm liên tục trên [t1, t2].
+
+▶ Cung
+
+⌢
+
+AB được gọi là trơn từng khúc nếu nó gồm hữu hạn cung trơn.
+
+• Cho cung
+
+⌢
+
+AB trơn (hoặc trơn từng khúc). Nếu hàm f (x, y) liên tục trên
+
+⌢
+
+AB thì nó
+
+RANK 2 | ch1 page 40 | score=0.7522
+1.2.1 Tích phân bất định
+
+Định nghĩa 1.9
+
+Hàm F được gọi là một nguyên hàm của f trên khoảng I ⊂ R nếu
+
+F ′(x) = f (x), ∀x ∈ I.
+
+Định lý 1.9
+
+Nếu F là một nguyên hàm của f trên khoảng I thì họ tất cả các nguyên hàm của f
+
+được gọi là tích phân bất định của f là
+
+Z
+
+f (x)dx = F (x) + C
+
+với C là một hằng số tùy ý.
+
+TS. Phùng Minh Đức (BMTL) 41/62
+
+RANK 3 | ch1 page 26 | score=0.7413
+gọi là đạo hàm cấp n của f , ký hiệu là f (n). Như vậy
+
+f (n) = (f (n−1))′.
+
+Tương tự, ta cũng có vi phân cấp cao của hàm f như sau:
+
+d2f = d(d f), . . . , dnf = d(dn−1f ).
+
+TS. Phùng Minh Đức (BMTL) 26/62

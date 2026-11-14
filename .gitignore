@@ -11,5 +11,3 @@ __pycache__/
 .streamlit/secrets.toml
 /starter/data/raw/
 # Traces contain full extracted PDF chunks; share only after rights review.
-/starter/results/traces_*.json
-/starter/results/grounding_audit_input.txt

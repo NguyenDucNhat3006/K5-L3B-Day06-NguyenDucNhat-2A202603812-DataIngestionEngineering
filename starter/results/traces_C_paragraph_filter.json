@@ -1,0 +1,950 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "question": "Theo tài liệu, hàm số f(x) liên tục tại điểm x0 trong khoảng (a,b) khi nào?",
+    "type": "direct",
+    "filter": null,
+    "gold_source_id": "ch1",
+    "gold_page": 20,
+    "expected_answer": "Hàm f liên tục tại x0 nếu giới hạn của f(x) khi x tiến tới x0 bằng f(x0).",
+    "evidence_quote": "liên tục tại x0 ∈ (a, b) nếu lim f (x) = f (x0 )",
+    "hit_at_1": false,
+    "evidence_hit_at_3": false,
+    "first_gold_rank": null,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ch1-p36-paragraph-0",
+        "score": 0.723414421081543,
+        "document_id": "ch1",
+        "source": "ch1.pdf",
+        "page": 36,
+        "text": "• Tìm cực trị của hàm số:\n\nĐịnh lý 1.8\n\nCho hàm số f xác định trên [a, b], có đạo hàm liên tục đến cấp n tại lân cận điểm\n\nx0 ∈ (a, b) và\n\nf ′(x0) = f ′′(x0) = · · ·= f (n−1)(x0) = 0; f (n)(x0) ̸= 0.\n\nKhi đó\n\n1. Nếu n chẵn thì x0 là một điểm cực trị của hàm f , cụ thể\n\n(\n\nf (n)(x0) > 0 : x0 là điểm cực tiểu\n\nf (n)(x0) < 0 : x0 là điểm cực đại .\n\n2. Nếu n lẻ thì x0 không là điểm cực trị của hàm f .\n\nTS. Phùng Minh Đức (BMTL) 37/62",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ch1-p21-paragraph-0",
+        "score": 0.7221359014511108,
+        "document_id": "ch1",
+        "source": "ch1.pdf",
+        "page": 21,
+        "text": "Điểm x0 tại đó hàm f không liên tục thì gọi là điểm gián đoạn.\n\n▶ Nếu ∃ lim\n\nx→x0\n\nf (x) ̸= f (x0) thì x0 gọi là điểm gián đoạn loại một.\n\n▶ Những điểm gián đoạn không phải loại một thì gọi là là loại hai.\n\nTS. Phùng Minh Đức (BMTL) 21/62",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ch1-p31-paragraph-0",
+        "score": 0.7005677223205566,
+        "document_id": "ch1",
+        "source": "ch1.pdf",
+        "page": 31,
+        "text": "Định lý 1.6\n\nGiả sử hàm f xác định và có đạo hàm đến cấp n liên tục trên [a, b] và có đạo hàm\n\ncấp n + 1 trên (a, b). Khi đó, với x0 ∈ (a, b) bất kỳ, ta có\n\nf (x) = f (x0) + f ′(x0)(x − x0) + f ′′(x0)2! (x − x0)2 + · · ·+\n\n+ f (n)(x0)n! (x − x0)n + f (n+1)(ξ)(n + 1)! (x − x0)n+1 (1.1)\n\nvới ξ là một số nằm giữa x và x0.\n\n▶ Công thức (1.1) gọi là công thức T aylorvà hàm f (x) cho bởi công thức đó gọi\n\nlà khai triển T aylor hữu hạn của f tại x0.",
+        "matches_gold_location": false
+      }
+    ],
+    "strategy": "C_paragraph_filter"
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "question": "Theo định nghĩa chuỗi số, khi nào một chuỗi được gọi là hội tụ và có tổng S?",
+    "type": "direct",
+    "filter": null,
+    "gold_source_id": "ch2",
+    "gold_page": 4,
+    "expected_answer": "Chuỗi hội tụ và có tổng S nếu giới hạn của tổng riêng sn khi n tiến tới dương vô cùng tồn tại và bằng một số hữu hạn S.",
+    "evidence_quote": "Nếu tồn tại lim sn = S hữu hạn thì ta nói chuỗi (2.1) hội tụ và có tổng S",
+    "hit_at_1": false,
+    "evidence_hit_at_3": true,
+    "first_gold_rank": 3,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ch2-p30-paragraph-0",
+        "score": 0.6812446523454591,
+        "document_id": "ch2",
+        "source": "ch2.pdf",
+        "page": 30,
+        "text": "Chú ý khi thực hiện sắp xếp lại chuỗi:\n\nĐịnh lý 2.10\n\n1. Nếu chuỗi\n\n∞X\n\nn=1\n\nun hội tụ tuyệt đối và có tổng S thì chuỗi suy từ nó bằng cách\n\nthay đổi thứ tự các phần tử hoặc nhóm tùy ý các số hạng lại cũng hội tụ tuyệt\n\nđối và có tổng S.\n\n2. Nếu chuỗi\n\n∞X\n\nn=1\n\nun bán hội tụ thì ta có thể thay đổi thứ tự và nhóm các số hạng\n\ncủa nó để tạo ra chuỗi mới có tổng khác hoặc phân kỳ.\n\nVí dụ về sắp xếp lại chuỗi bán hội tụ.\n\nTS. Phùng Minh Đức (BMTL) 30/46",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ch2-p5-paragraph-0",
+        "score": 0.6280405299687712,
+        "document_id": "ch2",
+        "source": "ch2.pdf",
+        "page": 5,
+        "text": "Ví dụ 2.1\n\nXét sự hội tụ của chuỗi:\n\n+∞X\n\nn=1\n\n1\n\nn(n + 1)= 12 + 16 + · · ·+ 1n(n + 1)+ · · ·\n\nGiải: T a có 1k(k + 1)= 1k − 1k + 1, ∀k = 1, 2, . . ., do đó tổng riêng của chuỗi là\n\nsn =\n\nnX\n\nk=1\n\n1\n\nk(k + 1)= 1− 12 + 12 − 13 + · · ·+ 1n − 1n + 1= 1− 1n + 1\n\n⇒ lim\n\nn→+∞\n\nsn = limn→+∞(1 − 1n + 1) = 1.\n\nVậy chuỗi đã cho hội tụ và có tổng bằng 1, tức là 12 + 16 + · · ·+ 1n(n + 1)+ · · ·= 1.\n\nPhần dư thứ n của chuỗi là rn = S − sn = 1− (1 − 1n + 1) = 1n + 1.\n\nTS. Phùng Minh Đức (BMTL) 5/46",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ch2-p4-paragraph-0",
+        "score": 0.6043373110495406,
+        "document_id": "ch2",
+        "source": "ch2.pdf",
+        "page": 4,
+        "text": "2.1.1 Định nghĩa\n\n▶ Cho dãy số u1, u2, . . . , un, . . .Tổng vô hạn dạng\n\n∞X\n\nn=1\n\nun = u1 + u2 + · · ·+ un + · · · (2.1)\n\nđược gọi là một chuỗi số, phần tử un gọi là số hạng thứ n của chuỗi.\n\n▶ T ổng riêng thứ n của chuỗi (2.1) là đại lượng\n\nsn =\n\nnX\n\nk=1\n\nuk = u1 + u2 + · · ·+ un.\n\n▶ Nếu tồn tại lim\n\nn→+∞\n\nsn = S hữu hạn thì ta nói chuỗi (2.1) hội tụ và có tổng S, viết\n\n∞X\n\nn=1\n\nun = S. Khi đó rn = S − sn gọi là phần dư thứ n của chuỗi.\n\n▶ Chuỗi (2.1) không hội tụ thì ta nói nó phân kỳ.",
+        "matches_gold_location": true
+      }
+    ],
+    "strategy": "C_paragraph_filter"
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "question": "Một điểm M0 được gọi là điểm cực tiểu địa phương của hàm nhiều biến f khi nào?",
+    "type": "direct",
+    "filter": null,
+    "gold_source_id": "ch3",
+    "gold_page": 47,
+    "expected_answer": "M0 là điểm cực tiểu địa phương nếu tồn tại một lân cận V của M0 sao cho f(M0) ≤ f(M) với mọi M thuộc V.",
+    "evidence_quote": "Điểm M0 được gọi là một điểm cực tiểu (địa phương) của f nếu tồn tại một lân cận V của M0 sao cho f (M0 ) ≤ f (M ), ∀M ∈ V.",
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "first_gold_rank": 1,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ch3-p47-paragraph-0",
+        "score": 0.8108784443663638,
+        "document_id": "ch3",
+        "source": "ch3.pdf",
+        "page": 47,
+        "text": "3.5.1 Cực trị của hàm nhiều biến\n\nCho hàm z = f (x, y) xác định trên miền D và M0 là một điểm trong của D.\n\n▶ Điểm M0 được gọi là một điểm cực tiểu (địa phương) của f nếu tồn tại một\n\nlân cận V của M0 sao cho\n\nf (M0) ≤ f (M ), ∀M ∈ V.\n\n▶ Điểm M0 được gọi là một điểm cực đại (địa phương) của f nếu tồn tại một lân\n\ncận V của M0 sao cho\n\nf (M0) ≥ f (M ), ∀M ∈ V.\n\n▶ Điểm cực đại và cực tiểu của một hàm số được gọi chung là điểm cực trị.",
+        "matches_gold_location": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ch3-p47-paragraph-1",
+        "score": 0.7939258094981809,
+        "document_id": "ch3",
+        "source": "ch3.pdf",
+        "page": 47,
+        "text": "▶ Điểm M0 được gọi là một điểm tới hạn của hàm f nếu\u0014 - không tồn tại ít nhất một trong hai đạo hàm riêng của f tại M0\n\n- tồn tại các đạo hàm riêng của f tại M0 và f ′x(M0) = f ′y(M0) = 0.\n\nTS. Phùng Minh Đức (BMTL) 47/62",
+        "matches_gold_location": true
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ch1-p21-paragraph-0",
+        "score": 0.7123088836669922,
+        "document_id": "ch1",
+        "source": "ch1.pdf",
+        "page": 21,
+        "text": "Điểm x0 tại đó hàm f không liên tục thì gọi là điểm gián đoạn.\n\n▶ Nếu ∃ lim\n\nx→x0\n\nf (x) ̸= f (x0) thì x0 gọi là điểm gián đoạn loại một.\n\n▶ Những điểm gián đoạn không phải loại một thì gọi là là loại hai.\n\nTS. Phùng Minh Đức (BMTL) 21/62",
+        "matches_gold_location": false
+      }
+    ],
+    "strategy": "C_paragraph_filter"
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "question": "Trong Chương 4, tích phân kép được xây dựng trên loại miền nào?",
+    "type": "metadata",
+    "filter": {
+      "document_id": "ch4"
+    },
+    "gold_source_id": "ch4",
+    "gold_page": 12,
+    "expected_answer": "Tích phân kép được xây dựng cho hàm f(x,y) xác định trên một miền đóng và bị chặn R thuộc R².",
+    "evidence_quote": "Cho hàm f (x, y) xác định trên một miền đóng và bị chặn R ⊂ R2",
+    "hit_at_1": false,
+    "evidence_hit_at_3": false,
+    "first_gold_rank": null,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ch4-p2-paragraph-0",
+        "score": 0.700671398719716,
+        "document_id": "ch4",
+        "source": "ch4.pdf",
+        "page": 2,
+        "text": "Chương 4: Phép tính tích phân hàm nhiều biến\n\n4.1 Bổ túc kiến thức về mặt bậc 2\n\n4.2 Tích phân kép\n\n4.3 Tích phân bội ba\n\nTS. Phùng Minh Đức (BMTL) 2/58",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ch4-p3-paragraph-0",
+        "score": 0.6000134110458749,
+        "document_id": "ch4",
+        "source": "ch4.pdf",
+        "page": 3,
+        "text": "4.1: Bổ túc kiến thức về mặt bậc 2\n\n4.1.1 Mặt trụ\n\n4.1.2 Các mặt bậc 2\n\nTS. Phùng Minh Đức (BMTL) 3/58",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ch4-p5-paragraph-0",
+        "score": 0.5527319210230044,
+        "document_id": "ch4",
+        "source": "ch4.pdf",
+        "page": 5,
+        "text": "4.1.2 Các mặt bậc 2\n\nCác mặt bậc 2: là tập hợp những điểm trong không gian Oxyz thỏa mãn phương\n\ntrình\n\nAx2 + By 2 + Cz 2 + Dxy + Eyz + F zx+ Gx + Hy + J z+ K = 0\n\ntrong đó A, B, . . . , Klà những hằng số.\n\nBằng cách nhóm và đổi biến, ta có thể đưa các mặt bậc 2 về một trong các mặt\n\nsau:\n\nTS. Phùng Minh Đức (BMTL) 5/58",
+        "matches_gold_location": false
+      }
+    ],
+    "strategy": "C_paragraph_filter"
+  },
+  {
+    "id": "q05",
+    "split": "test",
+    "question": "Trong chương về tích phân đường và tích phân mặt, điều kiện nào tương đương với việc tích phân đường loại 2 chỉ phụ thuộc hai đầu mút A, B mà không phụ thuộc đường đi?",
+    "type": "metadata",
+    "filter": {
+      "document_id": "ch5"
+    },
+    "gold_source_id": "ch5",
+    "gold_page": 20,
+    "expected_answer": "Trong miền đơn liên D, với P, Q và các đạo hàm liên tục, điều kiện ∂P/∂y = ∂Q/∂x tương đương với việc tích phân chỉ phụ thuộc hai đầu mút A, B mà không phụ thuộc đường đi.",
+    "evidence_quote": "Tích phân P dx + Qdy chỉ phụ thuộc hai đầu mút A, B mà không phụ thuộc cung AB ⊂ D",
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "first_gold_rank": 1,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ch5-p20-paragraph-0",
+        "score": 0.6855821013450623,
+        "document_id": "ch5",
+        "source": "ch5.pdf",
+        "page": 20,
+        "text": "5.2.4 Điều kiện để tích phân đường loại 2 không phụ thuộc\n\nđường lấy tích phân\n\nĐịnh lý 5.2\n\nGiả sử hàm số P (x, y), Q(x, y) và các đạo hàm của chúng liên tục trong một miền\n\nđơn liên D. Khi đó các mệnh đề sau đây tương đương với nhau:\n\n(a) ∂P∂y = ∂Q∂x , ∀(x, y) ∈ D;\n\n(b)\n\nH\n\nL\n\nP dx+ Qdy = 0 với mọi đường kín L ⊂ D;\n\n(c) Tích phân\n\nR\n\n↷\n\nAB\n\nP dx+ Qdy chỉ phụ thuộc hai đầu mút A, Bmà không phụ thuộc\n\ncung\n\n⌢\n\nAB ⊂ D;\n\n(d) P dx+ Qdy là vi phân toàn phần của một hàm u(x, y) nào đó trong D.",
+        "matches_gold_location": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ch5-p16-paragraph-0",
+        "score": 0.66612708568573,
+        "document_id": "ch5",
+        "source": "ch5.pdf",
+        "page": 16,
+        "text": "4.2.2 Cách tính tích phân đường loại 2\n\n• Nếu cung\n\n⌢\n\nAB trơn từng khúc và các hàm P, Qliên tục trên\n\n⌢\n\nAB thì tồn tại tích\n\nphân đường loại 2 của P, Qdọc theo cung\n\n⌢\n\nAB.\n\n• Nếu C ∈\n\n⌢\n\nAB thì\n\nZ\n\n↷\n\nAB\n\nP (x, y)dx + Q(x, y)dy =\n\nZ\n\n↷\n\nAC\n\nP (x, y)dx + Q(x, y)dy +\n\nZ\n\n↷\n\nCB\n\nP (x, y)dx + Q(x, y)dy.\n\n• Nếu đổi chiều lấy tích phân dọc theo cung\n\n⌢\n\nBA thì tích phân đường loại 2 bị đổi\n\ndấu Z\n\n↷\n\nBA\n\nP (x, y)dx + Q(x, y)dy = −\n\nZ\n\n↷\n\nAB\n\nP (x, y)dx + Q(x, y)dy.\n\nTS. Phùng Minh Đức (BMTL) 16/23",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ch5-p13-paragraph-0",
+        "score": 0.645948052406311,
+        "document_id": "ch5",
+        "source": "ch5.pdf",
+        "page": 13,
+        "text": "5.2 Tích phân đường loại 2\n\n5.2.1 Định nghĩa tích phân đường loại 2\n\n5.2.2 Cách tính tích phân đường loại 2\n\n5.2.3 Công thức Green\n\n5.2.4 Điều kiện để tích phân đường loại 2 không phụ thuộc đường lấy tích phân\n\n5.2.5 Tích phân đường loại 2 trong không gian\n\nTS. Phùng Minh Đức (BMTL) 13/23",
+        "matches_gold_location": false
+      }
+    ],
+    "strategy": "C_paragraph_filter"
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "question": "Định lý Rolle yêu cầu những giả thiết nào và cho kết luận gì?",
+    "type": "condition",
+    "filter": null,
+    "gold_source_id": "ch1",
+    "gold_page": 30,
+    "expected_answer": "Nếu f liên tục trên [a,b], khả vi trên (a,b) và f(a)=f(b), thì tồn tại c thuộc (a,b) sao cho f'(c)=0.",
+    "evidence_quote": "Cho hàm f xác định và liên tục trên [a, b], khả vi trên (a, b). Nếu f (a) = f (b) thì tồn tại c ∈ (a, b) sao cho f ′ (c) = 0.",
+    "hit_at_1": false,
+    "evidence_hit_at_3": false,
+    "first_gold_rank": null,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ch1-p3-paragraph-0",
+        "score": 0.4754847117201728,
+        "document_id": "ch1",
+        "source": "ch1.pdf",
+        "page": 3,
+        "text": "Chương 1: Phép tính vi phân và tích phân hàm một biến\n\n1.1 Phép tính vi phân hàm một biến\n\n1.2 Phép tính tích phân hàm một biến\n\nTS. Phùng Minh Đức (BMTL) 3/62",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ch1-p2-paragraph-0",
+        "score": 0.44988338499913794,
+        "document_id": "ch1",
+        "source": "ch1.pdf",
+        "page": 2,
+        "text": "Nội dung môn học\n\n1 Chương 1: Phép tính vi phân và tích phân hàm một biến\n\n2 Chương 2: Lý thuyết chuỗi\n\n3 Chương 3: Phép tính vi phân hàm nhiều biến\n\n4 Chương 4: Phép tính tích phân hàm nhiều biến\n\n5 Chương 5: Tích phân đường - tích phân mặt\n\n6 Chương 6: Phương trình vi phân\n\nTS. Phùng Minh Đức (BMTL) 2/62",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ch4-p20-paragraph-0",
+        "score": 0.43318949440686405,
+        "document_id": "ch4",
+        "source": "ch4.pdf",
+        "page": 20,
+        "text": "Định lý 4.2\n\nGiả sử hàm f (x, y) khả tích trên\n\nD = {(x, y) : a ≤ x ≤ b, y1(x) ≤ y ≤ y2(x)}\n\nvới y1, y2 là hai hàm số khả tích trên [a, b] và\n\ny1(x) ≤ y2(x), ∀x ∈ [a, b].\n\nTS. Phùng Minh Đức (BMTL) 20/58",
+        "matches_gold_location": false
+      }
+    ],
+    "strategy": "C_paragraph_filter"
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "question": "Theo định lý Lagrange, đạo hàm tại điểm c liên hệ thế nào với f(a) và f(b)?",
+    "type": "paraphrase",
+    "filter": null,
+    "gold_source_id": "ch1",
+    "gold_page": 31,
+    "expected_answer": "Tồn tại c thuộc (a,b) sao cho f'(c) = (f(b)-f(a))/(b-a).",
+    "evidence_quote": "f ′ (c) = (f (b) − f (a)) / (b − a)",
+    "hit_at_1": false,
+    "evidence_hit_at_3": false,
+    "first_gold_rank": null,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ch1-p30-paragraph-0",
+        "score": 0.7996591568399538,
+        "document_id": "ch1",
+        "source": "ch1.pdf",
+        "page": 30,
+        "text": "Định lý 1.5\n\n(Định lý Lagrange) Cho hàm f xác định và liên\n\ntục trên [a, b], khả vi trên (a, b). Khi đó tồn tại\n\nc ∈ (a, b) sao cho:\n\nf ′(c) = f (b) − f (a)b − a .\n\nTS. Phùng Minh Đức (BMTL) 31/62",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ch1-p28-paragraph-0",
+        "score": 0.7136506863624279,
+        "document_id": "ch1",
+        "source": "ch1.pdf",
+        "page": 28,
+        "text": "1.1.5 Các định lý giá trị trung bình\n\nĐịnh nghĩa 1.8\n\nCho hàm f xác định trên D ⊂ R. Điểm c ∈ D\n\nđược gọi là một điểm cực đại (cực tiểu) của f\n\nnếu ∃δ >0 sao cho (c − δ, c+ δ) ⊂ D và\n\n∀x ∈ (c − δ, c+ δ), ta có\n\nf (x) ≤ f (c) ( tương ứng f (x) ≥ f (c)).\n\nTS. Phùng Minh Đức (BMTL) 29/62",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ch1-p29-paragraph-0",
+        "score": 0.7014001429915526,
+        "document_id": "ch1",
+        "source": "ch1.pdf",
+        "page": 29,
+        "text": "Định lý 1.4\n\n(Định lý Fermat) Nếu hàm f đạt cực trị tại c ∈ D\n\nvà f khả vi tại c thì f ′(c) = 0.\n\nHệ quả 1.1\n\n(Định lý Rolle) Cho hàm f xác định và liên tục\n\ntrên [a, b], khả vi trên (a, b). Nếu f (a) = f (b) thì\n\ntồn tại c ∈ (a, b) sao cho f ′(c) = 0.\n\nTS. Phùng Minh Đức (BMTL) 30/62",
+        "matches_gold_location": false
+      }
+    ],
+    "strategy": "C_paragraph_filter"
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "question": "Công thức Newton-Leibniz tính tích phân xác định của hàm liên tục f trên [a,b] như thế nào?",
+    "type": "direct",
+    "filter": null,
+    "gold_source_id": "ch1",
+    "gold_page": 44,
+    "expected_answer": "Nếu F là một nguyên hàm của f trên [a,b], thì tích phân từ a đến b của f(x)dx bằng F(b)-F(a).",
+    "evidence_quote": "Nếu hàm f (x) liên tục trên [a, b] có một nguyên hàm trong đoạn đó là F (x) thì I = ∫ f (x)dx = F (b) − F (a).",
+    "hit_at_1": false,
+    "evidence_hit_at_3": false,
+    "first_gold_rank": null,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ch1-p43-paragraph-0",
+        "score": 0.7287955824617601,
+        "document_id": "ch1",
+        "source": "ch1.pdf",
+        "page": 43,
+        "text": "Định nghĩa 1.10 (tiếp)\n\nNếu tồn tại giới hạn hữu hạn\n\nlim\n\nn→+∞\n\nσn = I\n\nkhông phụ thuộc vào việc chia đoạn [a, b] cũng như việc chọn các ci, thì giá trị I đó\n\nđược gọi là tích phân xác định của hàm f trên [a, b], ký hiệu là\n\nI =\n\nZ b\n\na\n\nf (x)dx.\n\nCông thức Newton-Leibniz: Nếu hàm f (x) liên tục trên [a, b] có một nguyên hàm\n\ntrong đoạn đó là F (x) thì\n\nI =\n\nZ b\n\na\n\nf (x)dx = F (b) − F (a).\n\nTS. Phùng Minh Đức (BMTL) 44/62",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ch1-p30-paragraph-0",
+        "score": 0.720933444277419,
+        "document_id": "ch1",
+        "source": "ch1.pdf",
+        "page": 30,
+        "text": "Định lý 1.5\n\n(Định lý Lagrange) Cho hàm f xác định và liên\n\ntục trên [a, b], khả vi trên (a, b). Khi đó tồn tại\n\nc ∈ (a, b) sao cho:\n\nf ′(c) = f (b) − f (a)b − a .\n\nTS. Phùng Minh Đức (BMTL) 31/62",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ch1-p53-paragraph-0",
+        "score": 0.6796267009448956,
+        "document_id": "ch1",
+        "source": "ch1.pdf",
+        "page": 53,
+        "text": "1.2.4 Tích phân suy rộng loại 2\n\nĐịnh nghĩa 1.12\n\nCho hàm f xác định trên nửa đoạn (a, b] sao cho f liên tục trên [a + h, b], với h >0\n\ntùy ý, nhưng không liên tục trên toàn đoạn [a, b] (khi đó điểm x = a gọi là một điểm\n\nbất thường).\n\n▶ Nếu tồn tại giới hạn hữu hạn\n\nI = lim\n\nh→0+\n\nZ b\n\na+h\n\nf (x)dx\n\nthì giá trị I đó được gọi là tích phân suy rộng loại 2 của f trên (a, b] và ta nói\n\nhàm f khả tích trên (a, b]. Ký hiệu\n\nI =\n\nZ b\n\na\n\nf (x)dx, và nói tích phân đó hội tụ.",
+        "matches_gold_location": false
+      }
+    ],
+    "strategy": "C_paragraph_filter"
+  },
+  {
+    "id": "q09",
+    "split": "test",
+    "question": "Quy tắc D'Alembert kết luận thế nào khi giới hạn un+1/un bằng ℓ nhỏ hơn 1, lớn hơn 1 hoặc bằng 1?",
+    "type": "condition",
+    "filter": null,
+    "gold_source_id": "ch2",
+    "gold_page": 19,
+    "expected_answer": "Chuỗi số dương hội tụ nếu ℓ<1, phân kỳ nếu ℓ>1, và quy tắc không cho kết luận nếu ℓ=1.",
+    "evidence_quote": "hội tụ khi ℓ < 1; phân kỳ khi ℓ > 1; không có kết luận khi ℓ = 1.",
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "first_gold_rank": 1,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ch2-p19-paragraph-0",
+        "score": 0.7498204931563289,
+        "document_id": "ch2",
+        "source": "ch2.pdf",
+        "page": 19,
+        "text": "2.2.3 Quy tắc D’Alembert và Quy tắc Cauchy\n\nĐịnh lý 2.6\n\n(Quy tắc D’Alembert) Chuỗi số dương\n\n∞X\n\nn=1\n\nun có limn→+∞\n\nun+1\n\nun\n\n= ℓ\n\n▶ hội tụ khi ℓ <1;\n\n▶ phân kỳ khi ℓ >1;\n\n▶ không có kết luận khi ℓ = 1.\n\nTS. Phùng Minh Đức (BMTL) 19/46",
+        "matches_gold_location": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ch2-p22-paragraph-0",
+        "score": 0.7156281897800082,
+        "document_id": "ch2",
+        "source": "ch2.pdf",
+        "page": 22,
+        "text": "Ví dụ 2.10\n\nXét sự hội tụ của chuỗi có số hạng tổng quát un =\n\n(\n\nn/2n với n lẻ\n\n1/2n với n chẵn.\n\nGiải:\n\n• Chú ý rằng, ta có un+1\n\nun\n\n=\n\n(\n\n1\n\n2n với n lẻ\n\nn+1\n\n2 với n chẵn nên ∄ limn→+∞\n\nun+1\n\nun\n\n, do đó không\n\náp dụng quy tắc D’Alembert được.\n\n• Áp dụng quy tắc Cauchy: trước hết ta có n√un =\n\n(\n\nn√n/2 với n lẻ\n\n1/2 với n chẵn, và ngoài\n\nra lim\n\nn→+∞\n\nn√n = 1, do đó ta có\n\nlim\n\nn→+∞\n\nn√un = 12 < 1.\n\nVậy chuỗi đã cho hội tụ.\n\nTS. Phùng Minh Đức (BMTL) 22/46",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ch2-p23-paragraph-0",
+        "score": 0.7097755882077098,
+        "document_id": "ch2",
+        "source": "ch2.pdf",
+        "page": 23,
+        "text": "D’Alembert vs Cauchy\n\nVí dụ 2.11\n\nXét sự hội tụ của chuỗi\n\n∞X\n\nn=1\n\nn2\n\n2n .\n\nGiải:\n\n• (Áp dụng quy tắc D’Alembert) Đặt un = n22n , ta có limn→+∞ un+1un = limn→+∞ (n + 1)22n2 =\n\nlim\n\nn→+∞\n\n(1 +1n )2\n\n2 = 12 , do đó chuỗi đã cho hội tụ.\n\n• (Áp dụng quy tắc Cauchy) Đặt un = n22n , ta có limn→+∞ n√un = limn→+∞ n√n22 =\n\nlim\n\nn→+∞\n\n( n√n)2\n\n2 = 12 , do đó chuỗi đã cho hội tụ.\n\nTS. Phùng Minh Đức (BMTL) 23/46",
+        "matches_gold_location": false
+      }
+    ],
+    "strategy": "C_paragraph_filter"
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "question": "Theo tiêu chuẩn Leibniz, hai điều kiện nào đảm bảo một chuỗi đan dấu hội tụ?",
+    "type": "condition",
+    "filter": null,
+    "gold_source_id": "ch2",
+    "gold_page": 26,
+    "expected_answer": "Dãy số dương un phải giảm từ một chỉ số nào đó trở đi và un phải tiến tới 0 khi n tiến tới dương vô cùng.",
+    "evidence_quote": "là dãy giảm từ chỉ số n0 nào đó: un+1 ≤ un",
+    "hit_at_1": false,
+    "evidence_hit_at_3": false,
+    "first_gold_rank": null,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ch3-p10-paragraph-1",
+        "score": 0.5821871931012693,
+        "document_id": "ch3",
+        "source": "ch3.pdf",
+        "page": 10,
+        "text": "hạn bởi một mặt kín; gọi là đa liên nếu nó bị giới hạn\n\nbởi nhiều mặt kín rời nhau đôi một.\n\nTS. Phùng Minh Đức (BMTL) 10/62",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ch2-p3-paragraph-0",
+        "score": 0.5476042685036989,
+        "document_id": "ch2",
+        "source": "ch2.pdf",
+        "page": 3,
+        "text": "2.1 Chuỗi số\n\n2.1.1 Định nghĩa\n\n2.1.2 Điều kiện hội tụ\n\n2.1.3 Một số tính chất của chuỗi hội tụ\n\nTS. Phùng Minh Đức (BMTL) 3/46",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ch1-p3-paragraph-0",
+        "score": 0.5377020445022056,
+        "document_id": "ch1",
+        "source": "ch1.pdf",
+        "page": 3,
+        "text": "Chương 1: Phép tính vi phân và tích phân hàm một biến\n\n1.1 Phép tính vi phân hàm một biến\n\n1.2 Phép tính tích phân hàm một biến\n\nTS. Phùng Minh Đức (BMTL) 3/62",
+        "matches_gold_location": false
+      }
+    ],
+    "strategy": "C_paragraph_filter"
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "question": "Bán kính hội tụ R của chuỗi lũy thừa có ý nghĩa gì?",
+    "type": "paraphrase",
+    "filter": null,
+    "gold_source_id": "ch2",
+    "gold_page": 33,
+    "expected_answer": "Nếu tồn tại R>0 thì chuỗi lũy thừa hội tụ tuyệt đối khi |x|<R và phân kỳ khi |x|>R; R được gọi là bán kính hội tụ.",
+    "evidence_quote": "hội tụ tuyệt đối với |x| < R và phân kỳ với |x| > R. Số R đó được gọi là bán kính hội tụ",
+    "hit_at_1": false,
+    "evidence_hit_at_3": true,
+    "first_gold_rank": 2,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ch2-p31-paragraph-0",
+        "score": 0.5790037089289343,
+        "document_id": "ch2",
+        "source": "ch2.pdf",
+        "page": 31,
+        "text": "2.4 Chuỗi lũy thừa\n\n2.4.1 Chuỗi lũy thừa và sự hội tụ\n\n2.4.2 Bán kính hội tụ\n\n2.4.3 Khai triển một hàm thành chuỗi lũy thừa\n\nTS. Phùng Minh Đức (BMTL) 31/46",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ch2-p33-paragraph-1",
+        "score": 0.5769913964567007,
+        "document_id": "ch2",
+        "source": "ch2.pdf",
+        "page": 33,
+        "text": "kỳ với |x| > R. Số R đó được gọi là bán kính hội tụ của chuỗi lũy thừa (2.2).\n\nTS. Phùng Minh Đức (BMTL) 33/46",
+        "matches_gold_location": true
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ch2-p32-paragraph-0",
+        "score": 0.5688456378991182,
+        "document_id": "ch2",
+        "source": "ch2.pdf",
+        "page": 32,
+        "text": "2.4.1 Chuỗi lũy thừa và sự hội tụ\n\nChuỗi lũy thừa là chuỗi hàm số dạng\n\n∞X\n\nn=0\n\nanxn = a0 + a1x + a2x2 + · · ·+ anxn + · · · (2.2)\n\nvới x ∈ R và các hệ số an ∈ R, ∀n.\n\nĐịnh nghĩa 2.2\n\nChuỗi lũy thừa (2.2) được gọi là hội tụ tại điểm x0 nếu chuỗi số\n\n∞X\n\nn=0\n\nanxn0 hội tụ.\n\nT ập tất cả các điểm mà tại đó chuỗi (2.2) hội tụ gọi là miền hội tụ của chuỗi.\n\nTS. Phùng Minh Đức (BMTL) 32/46",
+        "matches_gold_location": false
+      }
+    ],
+    "strategy": "C_paragraph_filter"
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "question": "Trong tài liệu về lý thuyết chuỗi, quy tắc tích phân yêu cầu hàm f(x) có những tính chất nào trên [1,+∞)?",
+    "type": "metadata",
+    "filter": {
+      "document_id": "ch2"
+    },
+    "gold_source_id": "ch2",
+    "gold_page": 13,
+    "expected_answer": "f phải dương, liên tục, đơn điệu giảm trên [1,+∞) và có giới hạn bằng 0 khi x tiến tới +∞.",
+    "evidence_quote": "f (x) là một hàm số dương, liên tục, đơn điệu giảm trên [1, +∞) và có lim f (x) = 0",
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "first_gold_rank": 1,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ch2-p13-paragraph-0",
+        "score": 0.7948512312681231,
+        "document_id": "ch2",
+        "source": "ch2.pdf",
+        "page": 13,
+        "text": "2.2.1 Quy tắc tích phân\n\nChuỗi\n\n∞X\n\nn=1\n\nun mà un > 0, ∀n được gọi là chuỗi số dương.\n\nĐịnh lý 2.3\n\n(Quy tắc tích phân) Giả sử f (x) là một hàm số dương, liên tục, đơn điệu giảm trên\n\n[1, +∞) và có lim\n\nx→+∞\n\nf (x) = 0. Đặt un = f (n), n= 1, 2, . . .Khi đó\n\ntích phân suy rộng\n\nZ +∞\n\n1\n\nf (x)dx và chuỗi số dương\n\n∞X\n\nn=1\n\nun\n\ncùng hội tụ hoặc cùng phân kỳ.\n\nTS. Phùng Minh Đức (BMTL) 13/46",
+        "matches_gold_location": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ch2-p44-paragraph-0",
+        "score": 0.7911259407476166,
+        "document_id": "ch2",
+        "source": "ch2.pdf",
+        "page": 44,
+        "text": "2.4.3 Khai triển một hàm thành chuỗi lũy thừa\n\nĐịnh lý 2.14\n\nGiả sử hàm f xác định và có đạo hàm mọi cấp trong lân cận V của x0. Khi đó, với\n\nx ∈ V , ta có\n\nf (x) =f (x0) +f ′(x0)(x − x0) +f ′′(x0)2! (x − x0)2 + · · ·+\n\n+ f (n)(x0)n! (x − x0)n + · · ·\n\nCông thức trên gọi là chuỗi T aylorcủa hàm f (x) trong lân cận của x0.\n\nNếu x0 = 0thì chuỗi có dạng\n\nf (x) =f (0) +f ′(0)x + f ′′(0)2! x2 + · · ·+ f (n)(0)n! xn + · · ·\n\nđược gọi là chuỗi Mac Laurin của f .\n\nTS. Phùng Minh Đức (BMTL) 44/46",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ch2-p10-paragraph-0",
+        "score": 0.7551672087659603,
+        "document_id": "ch2",
+        "source": "ch2.pdf",
+        "page": 10,
+        "text": "2.1.3 Một số tính chất của chuỗi hội tụ\n\nĐịnh lý 2.2\n\n(a)\n\n∞X\n\nn=1\n\nun = S ⇒\n\n∞X\n\nn=1\n\nαun = αS, ∀α ∈ R.\n\n(b)\n\n\u001a P∞\n\nn=1 un = SP∞\n\nn=1 vn = S′ ⇒\n\n∞X\n\nn=1\n\n(un ± vn) =S ± S′.\n\n(c) Các chuỗi\n\n∞X\n\nn=1\n\nun và\n\n∞X\n\nn=p\n\nun, p >1\n\ncùng hội tụ hoặc cùng phân kỳ.\n\nTS. Phùng Minh Đức (BMTL) 10/46",
+        "matches_gold_location": false
+      }
+    ],
+    "strategy": "C_paragraph_filter"
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "question": "Đạo hàm riêng của f(x,y) theo biến x tại M0 được định nghĩa bằng cách nào?",
+    "type": "direct",
+    "filter": null,
+    "gold_source_id": "ch3",
+    "gold_page": 20,
+    "expected_answer": "Cố định y=y0; nếu hàm một biến f(x,y0) theo x có đạo hàm tại x0 thì đạo hàm đó là đạo hàm riêng của f theo x tại M0.",
+    "evidence_quote": "Cố định y = y0 , nếu hàm một biến f (x, y0 ) theo biến x có đạo hàm tại x0 thì đạo hàm đó được gọi là đạo hàm riêng của f theo biến x tại M0",
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "first_gold_rank": 1,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ch3-p20-paragraph-0",
+        "score": 0.8091130966476755,
+        "document_id": "ch3",
+        "source": "ch3.pdf",
+        "page": 20,
+        "text": "3.3.1 Đạo hàm riêng\n\nCho hàm số z = f (x, y) xác định trên miền D ⊂ R2, M0(x0, y0) ∈ D.\n\n▶ Cố định y = y0, nếu hàm một biến f (x, y0) theo biến x có đạo hàm tại x0 thì\n\nđạo hàm đó được gọi là đạo hàm riêng của f theo biến x tại M0, ký hiệu là\n\nf ′x(x0, y0) hay ∂f∂x (x0, y0) hay ∂u∂x (x0, y0).\n\n▶ Tương tự, ta có đạo hàm riêng của f theo biến y tại M0, ký hiệu là\n\nf ′y(x0, y0) hay ∂f∂y (x0, y0) hay ∂u∂y (x0, y0).",
+        "matches_gold_location": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ch3-p20-paragraph-1",
+        "score": 0.7557940483093315,
+        "document_id": "ch3",
+        "source": "ch3.pdf",
+        "page": 20,
+        "text": "Tổng quát, đạo hàm riêng của hàm f (x1, x2, . . . , xn) theo biến xi, i= 1 , . . . , ntại\n\nđiểm M (a1, a2, . . . , an) là đạo hàm tại ai của hàm một biến\n\nf (a1, . . . , ai−1, xi, ai+1, . . . , an).\n\nTS. Phùng Minh Đức (BMTL) 20/62",
+        "matches_gold_location": true
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ch1-p40-paragraph-0",
+        "score": 0.748773813247686,
+        "document_id": "ch1",
+        "source": "ch1.pdf",
+        "page": 40,
+        "text": "1.2.1 Tích phân bất định\n\nĐịnh nghĩa 1.9\n\nHàm F được gọi là một nguyên hàm của f trên khoảng I ⊂ R nếu\n\nF ′(x) = f (x), ∀x ∈ I.\n\nĐịnh lý 1.9\n\nNếu F là một nguyên hàm của f trên khoảng I thì họ tất cả các nguyên hàm của f\n\nđược gọi là tích phân bất định của f là\n\nZ\n\nf (x)dx = F (x) + C\n\nvới C là một hằng số tùy ý.\n\nTS. Phùng Minh Đức (BMTL) 41/62",
+        "matches_gold_location": false
+      }
+    ],
+    "strategy": "C_paragraph_filter"
+  },
+  {
+    "id": "q14",
+    "split": "test",
+    "question": "Khi nào hàm f(x,y) được gọi là khả vi tại M0 theo định nghĩa vi phân toàn phần?",
+    "type": "paraphrase",
+    "filter": null,
+    "gold_source_id": "ch3",
+    "gold_page": 22,
+    "expected_answer": "f khả vi tại M0 nếu số gia toàn phần có thể biểu diễn thành phần tuyến tính AΔx+BΔy cộng với αΔx+βΔy, trong đó α và β tiến tới 0 khi M tiến tới M0.",
+    "evidence_quote": "Nếu có thể biểu diễn dạng ∆f = A(x0 , y0 )∆x + B(x0 , y0 )∆y + α∆x + β∆y, ở đó α → 0, β → 0 khi M → M0 , thì ta nói hàm f khả vi tại M0",
+    "hit_at_1": false,
+    "evidence_hit_at_3": false,
+    "first_gold_rank": null,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ch3-p47-paragraph-0",
+        "score": 0.8028890373044647,
+        "document_id": "ch3",
+        "source": "ch3.pdf",
+        "page": 47,
+        "text": "3.5.1 Cực trị của hàm nhiều biến\n\nCho hàm z = f (x, y) xác định trên miền D và M0 là một điểm trong của D.\n\n▶ Điểm M0 được gọi là một điểm cực tiểu (địa phương) của f nếu tồn tại một\n\nlân cận V của M0 sao cho\n\nf (M0) ≤ f (M ), ∀M ∈ V.\n\n▶ Điểm M0 được gọi là một điểm cực đại (địa phương) của f nếu tồn tại một lân\n\ncận V của M0 sao cho\n\nf (M0) ≥ f (M ), ∀M ∈ V.\n\n▶ Điểm cực đại và cực tiểu của một hàm số được gọi chung là điểm cực trị.",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ch3-p47-paragraph-1",
+        "score": 0.7612331963320506,
+        "document_id": "ch3",
+        "source": "ch3.pdf",
+        "page": 47,
+        "text": "▶ Điểm M0 được gọi là một điểm tới hạn của hàm f nếu\u0014 - không tồn tại ít nhất một trong hai đạo hàm riêng của f tại M0\n\n- tồn tại các đạo hàm riêng của f tại M0 và f ′x(M0) = f ′y(M0) = 0.\n\nTS. Phùng Minh Đức (BMTL) 47/62",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ch1-p22-paragraph-0",
+        "score": 0.7491394281387329,
+        "document_id": "ch1",
+        "source": "ch1.pdf",
+        "page": 22,
+        "text": "1.1.4 Đạo hàm và vi phân\n\nĐịnh nghĩa 1.7\n\nHàm số f (x) xác định trên khoảng (a, b) được gọi là khả vi tại x0 ∈ (a, b) nếu tồn\n\ntại giới hạn hữu hạn\n\nlim\n\nx→x0\n\nf (x) − f (x0)\n\nx − x0\n\n.\n\nGiá trị giới hạn hữu hạn đó gọi là đạo hàm của f tại x0, ký hiệu là f ′(x0).\n\nHàm f được gọi là khả vi trên (a, b) nếu nó khả vi tại mọi điểm trong (a, b).\n\nTS. Phùng Minh Đức (BMTL) 22/62",
+        "matches_gold_location": false
+      }
+    ],
+    "strategy": "C_paragraph_filter"
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "question": "Với phương trình F(x,y)=0, điều kiện nào trong Định lý 3.6 đảm bảo tồn tại hàm ẩn duy nhất y=f(x) gần x0?",
+    "type": "condition",
+    "filter": null,
+    "gold_source_id": "ch3",
+    "gold_page": 42,
+    "expected_answer": "F phải có các đạo hàm riêng liên tục trên một khoảng mở, F(x0,y0)=0 và đạo hàm riêng Fy tại (x0,y0) phải khác 0.",
+    "evidence_quote": "F (x0 , y0 ) = 0 và có Fy′ (x0 , y0 ) ≠ 0. Khi đó phương trình (3.3) xác định trong lân cận I nào đó của x0 một hàm ẩn duy nhất y = f (x)",
+    "hit_at_1": false,
+    "evidence_hit_at_3": false,
+    "first_gold_rank": null,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ch3-p43-paragraph-0",
+        "score": 0.8261795290166003,
+        "document_id": "ch3",
+        "source": "ch3.pdf",
+        "page": 43,
+        "text": "Ví dụ 3.13\n\nTính đạo hàm của hàm ẩn cho bởi phương trình: F (x, y) = yex − exy = 0.\n\nGiải: ta có F (0, 1) = 0 và F ′x = yex − yexy, F ′y = ex − xexy\n\n⇒ F ′y(0, 1) = 1. Như vậy các điều kiện trong Định lý 3.6 được thỏa mãn.\n\nĐạo hàm của hàm ẩn y = f (x) thỏa mãn phương trình trên cho bởi\n\ny′ = − F ′x\n\nF ′y = − yex − yexyex − xexy .\n\nTS. Phùng Minh Đức (BMTL) 43/62",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ch3-p54-paragraph-0",
+        "score": 0.8207153081893921,
+        "document_id": "ch3",
+        "source": "ch3.pdf",
+        "page": 54,
+        "text": "3.5.2 Cực trị có điều kiện\n\nCực trị của hàm f (x, y) trên miền D = {(x, y) : g(x, y) = 0 } gọi là cực trị có điều\n\nkiện.\n\nĐịnh lý 3.10\n\n(ĐK cần của cực trị có điều kiện) Cho M0(x0, y0) là một điểm cực trị có điều kiện\n\ncủa hàm f trên D. Giả sử f và g có các đạo hàm riêng trong lân cận của M0 và\n\ng′x(M0)2 + g′y(M0)2 ̸= 0. Khi đó ta có\n\nf ′x(x0, y0) f ′y(x0, y0)g′x(x0, y0) g′y(x0, y0)\n\n= 0. (3.5)\n\nĐiều kiện (3.5) và điều kiện g(x0, y0) = 0 giúp ta tìm (x0, y0).\n\nTS. Phùng Minh Đức (BMTL) 54/62",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ch3-p41-paragraph-0",
+        "score": 0.8160280694944831,
+        "document_id": "ch3",
+        "source": "ch3.pdf",
+        "page": 41,
+        "text": "3.4.1 Hàm ẩn\n\nCho tập U ⊂ R2 và hàm F : U → R. Xét phương trình\n\nF (x, y) = 0. (3.3)\n\n▶ Nếu với mỗi x = x0 trong khoảng I nào đó, tồn tại y0 sao cho (x0, y0) là\n\nnghiệm của phương trình (3.3) thì ta nói phương trình đó xác định hàm số ẩn\n\ny theo x trong khoảng I.\n\n▶ Hàm số f : I → R gọi là hàm số ẩn xác định bởi phương trình (3.3) nếu\n\n∀x ∈ I : (x, f(x)) ∈ U và F (x, f(x)) = 0.\n\nTS. Phùng Minh Đức (BMTL) 41/62",
+        "matches_gold_location": false
+      }
+    ],
+    "strategy": "C_paragraph_filter"
+  },
+  {
+    "id": "q16",
+    "split": "dev",
+    "question": "Trong định nghĩa tích phân bội ba, miền V cần có đặc điểm gì?",
+    "type": "direct",
+    "filter": null,
+    "gold_source_id": "ch4",
+    "gold_page": 42,
+    "expected_answer": "V là một miền đóng và bị chặn trong R³.",
+    "evidence_quote": "Cho hàm f (x, y, z) xác định trên một miền đóng và bị chặn V ⊂ R3",
+    "hit_at_1": false,
+    "evidence_hit_at_3": true,
+    "first_gold_rank": 3,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ch4-p44-paragraph-0",
+        "score": 0.7276818156242371,
+        "document_id": "ch4",
+        "source": "ch4.pdf",
+        "page": 44,
+        "text": "▶ Trong công thức tích phân bội ba, V gọi là miền lấy tích phân, f gọi là hàm\n\ndưới dấu tích phân, dV gọi là yếu tố thể tích.\n\n▶ Hàm f (x, y, z) liên tục trên miền đóng, bị chặn V thì khả tích trên miền đó.\n\n▶ Nếu miền V được chia thành 2 miền V1, V2 không dẫm lên nhau thì\n\nZ Z Z\n\nV\n\nf (x, y, z)dV =\n\nZ Z Z\n\nV1\n\nf (x, y, z)dV +\n\nZ Z Z\n\nV2\n\nf (x, y, z)dV.\n\n▶ Chia miền V bởi các mặt song song với Oxy, Oyz, Oxz, ta được dV = dxdydz,\n\ndo đó\n\nI =\n\nZ Z Z\n\nV\n\nf (x, y, z)dV =\n\nZ Z Z\n\nV",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ch3-p2-paragraph-0",
+        "score": 0.6674619118846614,
+        "document_id": "ch3",
+        "source": "ch3.pdf",
+        "page": 2,
+        "text": "Chương 3: Phép tính vi phân hàm nhiều biến\n\n3.1 Các khái niệm cơ bản về hàm nhiều biến\n\n3.2 Giới hạn\n\n3.3 Đạo hàm và vi phân\n\n3.4 Hàm ẩn\n\n3.5 Cực trị\n\nTS. Phùng Minh Đức (BMTL) 2/62",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ch4-p42-paragraph-0",
+        "score": 0.6508108585589624,
+        "document_id": "ch4",
+        "source": "ch4.pdf",
+        "page": 42,
+        "text": "4.3.1 Định nghĩa tích phân bội ba\n\nĐịnh nghĩa 4.2\n\nCho hàm f (x, y, z) xác định trên một miền đóng\n\nvà bị chặn V ⊂ R3. Chia V thành n mảnh nhỏ\n\nVi, i= 1, . . . , n. Giả sử mỗi mảnh đó có đường\n\nkính tương ứng là di = max{d(M, N), M, N∈ Vi}\n\nvà thể tích tương ứng là ∆Vi, i= 1, . . . , n.\n\nLấy tùy ý (xi, yi, zi) ∈ Vi và lập tổng\n\nσn =\n\nnX\n\ni=1\n\nf (xi, yi, zi)∆Vi.\n\nTS. Phùng Minh Đức (BMTL) 42/58",
+        "matches_gold_location": true
+      }
+    ],
+    "strategy": "C_paragraph_filter"
+  },
+  {
+    "id": "q17",
+    "split": "dev",
+    "question": "Khi đổi biến trong tích phân kép, định thức Jacobi xuất hiện trong công thức dưới dạng nào?",
+    "type": "direct",
+    "filter": null,
+    "gold_source_id": "ch4",
+    "gold_page": 31,
+    "expected_answer": "Định thức Jacobi xuất hiện dưới dạng giá trị tuyệt đối |J| trong phần tử tích phân sau khi đổi biến.",
+    "evidence_quote": "f (x, y)dxdy = f (x(u, v), y(u, v))|J|dudv",
+    "hit_at_1": false,
+    "evidence_hit_at_3": false,
+    "first_gold_rank": null,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ch3-p30-paragraph-0",
+        "score": 0.677068750683592,
+        "document_id": "ch3",
+        "source": "ch3.pdf",
+        "page": 30,
+        "text": "Ngoài ra, ta có định thức Jacobi\n\n|J| = DuDx =\n\n∂u1∂x ∂u1∂y∂u2∂x ∂u2∂y\n\n=\n\nyexy xexycos(x + 2y) 2 cos( x + 2y)\n\n= yexy × 2 cos(x + 2y) − xexy × cos(x + 2y)\n\n= (2y − x)exy cos(x + 2y).\n\nTS. Phùng Minh Đức (BMTL) 30/62",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ch3-p20-paragraph-1",
+        "score": 0.540209981215596,
+        "document_id": "ch3",
+        "source": "ch3.pdf",
+        "page": 20,
+        "text": "Tổng quát, đạo hàm riêng của hàm f (x1, x2, . . . , xn) theo biến xi, i= 1 , . . . , ntại\n\nđiểm M (a1, a2, . . . , an) là đạo hàm tại ai của hàm một biến\n\nf (a1, . . . , ai−1, xi, ai+1, . . . , an).\n\nTS. Phùng Minh Đức (BMTL) 20/62",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ch2-p44-paragraph-0",
+        "score": 0.5255011633337247,
+        "document_id": "ch2",
+        "source": "ch2.pdf",
+        "page": 44,
+        "text": "2.4.3 Khai triển một hàm thành chuỗi lũy thừa\n\nĐịnh lý 2.14\n\nGiả sử hàm f xác định và có đạo hàm mọi cấp trong lân cận V của x0. Khi đó, với\n\nx ∈ V , ta có\n\nf (x) =f (x0) +f ′(x0)(x − x0) +f ′′(x0)2! (x − x0)2 + · · ·+\n\n+ f (n)(x0)n! (x − x0)n + · · ·\n\nCông thức trên gọi là chuỗi T aylorcủa hàm f (x) trong lân cận của x0.\n\nNếu x0 = 0thì chuỗi có dạng\n\nf (x) =f (0) +f ′(0)x + f ′′(0)2! x2 + · · ·+ f (n)(0)n! xn + · · ·\n\nđược gọi là chuỗi Mac Laurin của f .\n\nTS. Phùng Minh Đức (BMTL) 44/46",
+        "matches_gold_location": false
+      }
+    ],
+    "strategy": "C_paragraph_filter"
+  },
+  {
+    "id": "q18",
+    "split": "test",
+    "question": "Trong chương về tích phân nhiều biến, tích phân bội ba được xây dựng bằng cách chia miền V thành những thành phần nào?",
+    "type": "metadata",
+    "filter": {
+      "document_id": "ch4"
+    },
+    "gold_source_id": "ch4",
+    "gold_page": 42,
+    "expected_answer": "Miền V được chia thành n mảnh nhỏ Vi, mỗi mảnh có đường kính di và thể tích ΔVi.",
+    "evidence_quote": "Chia V thành n mảnh nhỏ Vi , i = 1, . . . , n.",
+    "hit_at_1": false,
+    "evidence_hit_at_3": true,
+    "first_gold_rank": 2,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ch4-p44-paragraph-0",
+        "score": 0.7060511322632772,
+        "document_id": "ch4",
+        "source": "ch4.pdf",
+        "page": 44,
+        "text": "▶ Trong công thức tích phân bội ba, V gọi là miền lấy tích phân, f gọi là hàm\n\ndưới dấu tích phân, dV gọi là yếu tố thể tích.\n\n▶ Hàm f (x, y, z) liên tục trên miền đóng, bị chặn V thì khả tích trên miền đó.\n\n▶ Nếu miền V được chia thành 2 miền V1, V2 không dẫm lên nhau thì\n\nZ Z Z\n\nV\n\nf (x, y, z)dV =\n\nZ Z Z\n\nV1\n\nf (x, y, z)dV +\n\nZ Z Z\n\nV2\n\nf (x, y, z)dV.\n\n▶ Chia miền V bởi các mặt song song với Oxy, Oyz, Oxz, ta được dV = dxdydz,\n\ndo đó\n\nI =\n\nZ Z Z\n\nV\n\nf (x, y, z)dV =\n\nZ Z Z\n\nV",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ch4-p42-paragraph-0",
+        "score": 0.6673371592957654,
+        "document_id": "ch4",
+        "source": "ch4.pdf",
+        "page": 42,
+        "text": "4.3.1 Định nghĩa tích phân bội ba\n\nĐịnh nghĩa 4.2\n\nCho hàm f (x, y, z) xác định trên một miền đóng\n\nvà bị chặn V ⊂ R3. Chia V thành n mảnh nhỏ\n\nVi, i= 1, . . . , n. Giả sử mỗi mảnh đó có đường\n\nkính tương ứng là di = max{d(M, N), M, N∈ Vi}\n\nvà thể tích tương ứng là ∆Vi, i= 1, . . . , n.\n\nLấy tùy ý (xi, yi, zi) ∈ Vi và lập tổng\n\nσn =\n\nnX\n\ni=1\n\nf (xi, yi, zi)∆Vi.\n\nTS. Phùng Minh Đức (BMTL) 42/58",
+        "matches_gold_location": true
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ch4-p41-paragraph-0",
+        "score": 0.6508047774673935,
+        "document_id": "ch4",
+        "source": "ch4.pdf",
+        "page": 41,
+        "text": "4.3: Tích phân bội ba\n\n4.3.1 Định nghĩa tích phân bội ba\n\n4.3.2 Cách tính tích phân bội ba\n\n4.3.3 Đổi biến số trong tích phân bội ba\n\n4.3.4 Ứng dụng của tích phân bội ba\n\nTS. Phùng Minh Đức (BMTL) 41/58",
+        "matches_gold_location": false
+      }
+    ],
+    "strategy": "C_paragraph_filter"
+  },
+  {
+    "id": "q19",
+    "split": "dev",
+    "question": "Một cung phẳng cho bởi y=f(x), x thuộc [a,b], được gọi là cung trơn khi nào?",
+    "type": "direct",
+    "filter": null,
+    "gold_source_id": "ch5",
+    "gold_page": 6,
+    "expected_answer": "Cung được gọi là trơn nếu hàm f có đạo hàm liên tục trên [a,b].",
+    "evidence_quote": "Cung AB được cho bởi phương trình y = f (x), x ∈ [a, b] được gọi là trơn nếu hàm f có đạo hàm liên tục trên [a, b].",
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "first_gold_rank": 1,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ch5-p6-paragraph-0",
+        "score": 0.6866975835977557,
+        "document_id": "ch5",
+        "source": "ch5.pdf",
+        "page": 6,
+        "text": "5.1.2 Cách tính tích phân đường loại 1\n\n• Cung trơn:\n\n▶ Cung\n\n⌢\n\nAB được cho bởi phương trình y = f (x), x∈ [a, b] được gọi là trơn nếu\n\nhàm f có đạo hàm liên tục trên [a, b].\n\n▶ Cung\n\n⌢\n\nAB được cho bởi phương trình tham số x = x(t), y= y(t), t∈ [t1, t2]\n\nđược gọi là trơn nếu các hàm x(t), y(t) có đạo hàm liên tục trên [t1, t2].\n\n▶ Cung\n\n⌢\n\nAB được gọi là trơn từng khúc nếu nó gồm hữu hạn cung trơn.\n\n• Cho cung\n\n⌢\n\nAB trơn (hoặc trơn từng khúc). Nếu hàm f (x, y) liên tục trên\n\n⌢\n\nAB thì nó",
+        "matches_gold_location": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ch1-p43-paragraph-0",
+        "score": 0.6665829618746928,
+        "document_id": "ch1",
+        "source": "ch1.pdf",
+        "page": 43,
+        "text": "Định nghĩa 1.10 (tiếp)\n\nNếu tồn tại giới hạn hữu hạn\n\nlim\n\nn→+∞\n\nσn = I\n\nkhông phụ thuộc vào việc chia đoạn [a, b] cũng như việc chọn các ci, thì giá trị I đó\n\nđược gọi là tích phân xác định của hàm f trên [a, b], ký hiệu là\n\nI =\n\nZ b\n\na\n\nf (x)dx.\n\nCông thức Newton-Leibniz: Nếu hàm f (x) liên tục trên [a, b] có một nguyên hàm\n\ntrong đoạn đó là F (x) thì\n\nI =\n\nZ b\n\na\n\nf (x)dx = F (b) − F (a).\n\nTS. Phùng Minh Đức (BMTL) 44/62",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ch1-p22-paragraph-0",
+        "score": 0.6625020503997803,
+        "document_id": "ch1",
+        "source": "ch1.pdf",
+        "page": 22,
+        "text": "1.1.4 Đạo hàm và vi phân\n\nĐịnh nghĩa 1.7\n\nHàm số f (x) xác định trên khoảng (a, b) được gọi là khả vi tại x0 ∈ (a, b) nếu tồn\n\ntại giới hạn hữu hạn\n\nlim\n\nx→x0\n\nf (x) − f (x0)\n\nx − x0\n\n.\n\nGiá trị giới hạn hữu hạn đó gọi là đạo hàm của f tại x0, ký hiệu là f ′(x0).\n\nHàm f được gọi là khả vi trên (a, b) nếu nó khả vi tại mọi điểm trong (a, b).\n\nTS. Phùng Minh Đức (BMTL) 22/62",
+        "matches_gold_location": false
+      }
+    ],
+    "strategy": "C_paragraph_filter"
+  },
+  {
+    "id": "q20",
+    "split": "test",
+    "question": "Tích phân đường loại 1 của hàm f dọc theo cung AB được định nghĩa thông qua giới hạn nào?",
+    "type": "condition",
+    "filter": null,
+    "gold_source_id": "ch5",
+    "gold_page": 5,
+    "expected_answer": "Đó là giới hạn hữu hạn I của tổng σn khi kích thước lớn nhất của các cung con tiến tới 0 và n tiến tới vô cùng, với giới hạn không phụ thuộc cách chia cung hay cách chọn các điểm Mi.",
+    "evidence_quote": "Nếu max ∆si → 0 khi n → +∞ và tồn tại giới hạn hữu hạn lim σn = I, không phụ thuộc vào cách chia cung AB cũng như cách chọn các điểm Mi",
+    "hit_at_1": false,
+    "evidence_hit_at_3": false,
+    "first_gold_rank": null,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ch5-p6-paragraph-0",
+        "score": 0.7759422988822816,
+        "document_id": "ch5",
+        "source": "ch5.pdf",
+        "page": 6,
+        "text": "5.1.2 Cách tính tích phân đường loại 1\n\n• Cung trơn:\n\n▶ Cung\n\n⌢\n\nAB được cho bởi phương trình y = f (x), x∈ [a, b] được gọi là trơn nếu\n\nhàm f có đạo hàm liên tục trên [a, b].\n\n▶ Cung\n\n⌢\n\nAB được cho bởi phương trình tham số x = x(t), y= y(t), t∈ [t1, t2]\n\nđược gọi là trơn nếu các hàm x(t), y(t) có đạo hàm liên tục trên [t1, t2].\n\n▶ Cung\n\n⌢\n\nAB được gọi là trơn từng khúc nếu nó gồm hữu hạn cung trơn.\n\n• Cho cung\n\n⌢\n\nAB trơn (hoặc trơn từng khúc). Nếu hàm f (x, y) liên tục trên\n\n⌢\n\nAB thì nó",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ch1-p40-paragraph-0",
+        "score": 0.752172976991293,
+        "document_id": "ch1",
+        "source": "ch1.pdf",
+        "page": 40,
+        "text": "1.2.1 Tích phân bất định\n\nĐịnh nghĩa 1.9\n\nHàm F được gọi là một nguyên hàm của f trên khoảng I ⊂ R nếu\n\nF ′(x) = f (x), ∀x ∈ I.\n\nĐịnh lý 1.9\n\nNếu F là một nguyên hàm của f trên khoảng I thì họ tất cả các nguyên hàm của f\n\nđược gọi là tích phân bất định của f là\n\nZ\n\nf (x)dx = F (x) + C\n\nvới C là một hằng số tùy ý.\n\nTS. Phùng Minh Đức (BMTL) 41/62",
+        "matches_gold_location": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ch1-p26-paragraph-1",
+        "score": 0.7413247957214361,
+        "document_id": "ch1",
+        "source": "ch1.pdf",
+        "page": 26,
+        "text": "gọi là đạo hàm cấp n của f , ký hiệu là f (n). Như vậy\n\nf (n) = (f (n−1))′.\n\nTương tự, ta cũng có vi phân cấp cao của hàm f như sau:\n\nd2f = d(d f), . . . , dnf = d(dn−1f ).\n\nTS. Phùng Minh Đức (BMTL) 26/62",
+        "matches_gold_location": false
+      }
+    ],
+    "strategy": "C_paragraph_filter"
+  }
+]
