@@ -53,4 +53,10 @@ Pages: Retrieval Playground (live pgvector search, optional C document filter), 
 - One can verify Python imports without database access with `python -m unittest discover -s tests -v`.
 - PostgreSQL pgvector uses cosine distance (`<=>`) and exact ordering for this small corpus; filtering is applied before ranking in SQL.
 
-Physical page numbers are preserved. PDF text extraction can damage mathematical notation, matrices, and multi-line formulas; see the individual report and the audited failures. Source redistribution permissions are not established in the manifest and must be verified before sharing PDFs or extracted content. Raw PDFs and full-text traces remain local and are ignored by Git until rights are confirmed; evaluation regenerates the traces locally.
+Physical page numbers are preserved. PDF text extraction can damage mathematical notation, matrices, and multi-line formulas; see the individual report and the audited failures. Source redistribution permissions are not established in the manifest and must be verified before sharing PDFs or extracted content; evaluation regenerates the traces locally.
+
+- Original PDF files are kept locally and are not committed.
+- Retrieval traces and grounding audit artifacts are included
+  in the repository for academic evaluation and reproducibility.
+- Use and redistribution are subject to the permissions
+  documented in the corpus manifest.

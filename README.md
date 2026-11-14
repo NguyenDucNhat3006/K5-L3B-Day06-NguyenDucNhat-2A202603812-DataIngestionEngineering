@@ -26,7 +26,12 @@ PDF extraction has visible formula/layout errors, including an incomplete differ
 - Student record: [`STUDENT.md`](STUDENT.md)
 - Experiment log: [`artifacts/experiment_log.csv`](artifacts/experiment_log.csv)
 - Individual report: [`report/individual/2A202603812_NguyenDucNhat.md`](report/individual/2A202603812_NguyenDucNhat.md)
-- Corpus permissions are unknown and marked for verification. PDFs are not committed; verify redistribution rights before sharing the source PDFs or extracted traces.
+
+- Corpus: Five calculus lecture PDFs authored by TS. Phùng Minh Đức (UIT).
+- Permission: Educational and non-commercial use, including publication of retrieval traces, was authorized by the copyright holder on [DATE]. Usage is limited to the scope of that permission.
+- Original PDF files are not distributed in this repository.
+- The published retrieval traces are provided for academic evaluation and reproducibility.
+  
 - `.env`, credentials, and local databases must remain untracked. No GitHub push or deployment is part of this repository workflow.
 
 ## Lab references
